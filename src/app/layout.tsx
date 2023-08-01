@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Montserrat, Merriweather } from 'next/font/google'
 import '@/app/scss/style.scss'
+import { Header } from '@/app/components/Header'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -31,7 +32,10 @@ export default function RootLayout({ children }: Props) {
       lang="en"
       className={`${montserrat.variable} ${merriweather.variable}`}
     >
-      <body>{children}</body>
+      <body className="d-flex flex-column">
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
