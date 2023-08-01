@@ -20,7 +20,7 @@ clean:
 
 ## build - build the app for release
 build: clean install
-	npm build
+	npm run build
 	cp CNAME out/
 	touch out/.nojekyll
 
