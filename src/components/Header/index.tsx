@@ -2,6 +2,7 @@
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 import { SITE_NAME } from '@/constants'
 import { ThemeToggleButton } from './ThemeToggleButton'
+import React from 'react'
 
 type Props = {
   theme: 'light' | 'dark'
@@ -9,9 +10,34 @@ type Props = {
 }
 
 export function Header({ theme, toggleTheme }: Props) {
+  const [isFixed, setFixed] = React.useState(false)
+
+  const handleScroll = () => {
+    setFixed((state) => {
+      if (!state && window.scrollY > 350) {
+        return true
+      } else if (state && window.scrollY <= 350) {
+        return false
+      } else {
+        return state
+      }
+    })
+  }
+
+  React.useEffect(() => {
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <header>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar
+        expand="lg"
+        fixed={isFixed ? 'top' : undefined}
+        className="main-navbar bg-body-tertiary"
+      >
         <Container>
           <Navbar.Brand href="/">{SITE_NAME}</Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar-nav" />
