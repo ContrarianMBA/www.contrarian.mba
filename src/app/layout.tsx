@@ -1,10 +1,14 @@
 'use client'
 import React from 'react'
+
 import { Montserrat, Merriweather } from 'next/font/google'
+
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Header } from '@/components/Header'
 import '@/scss/style.scss'
+
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 config.autoAddCss = false
 
@@ -41,6 +45,7 @@ export default function RootLayout({ children }: Props) {
       <body className="d-flex flex-column vh-100">
         <Header theme={theme} toggleTheme={toggleTheme} />
         <main className="flex-grow-1">{children}</main>
+        <Footer />
       </body>
     </html>
   )
