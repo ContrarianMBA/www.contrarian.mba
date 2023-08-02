@@ -1,7 +1,7 @@
 'use client'
-import { CarouselLists } from '@/app/constants'
+import { CarouselLists } from '@/constants'
 import Image from 'next/image'
-import Carousel from 'react-bootstrap/Carousel'
+import { Carousel } from 'react-bootstrap'
 
 export function HomepageCarousel() {
   return (
@@ -9,10 +9,13 @@ export function HomepageCarousel() {
       <Carousel fade>
         {CarouselLists.map(function (item) {
           return (
-            <Carousel.Item className="d-flex justify-content-start align-start">
+            <Carousel.Item
+              key={item.name}
+              className="d-flex justify-content-start align-start"
+            >
               <Image
                 className="d-block w-100"
-                src="/home-background.png"
+                src="/images/home-background.png"
                 alt="Image One"
                 width={1000}
                 height={400}

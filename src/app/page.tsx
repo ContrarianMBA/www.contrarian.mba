@@ -1,6 +1,6 @@
 'use client'
+import { HomepageCarousel } from '@/components/Home/carousel'
 import { Container } from 'react-bootstrap'
-import { HomepageCarousel } from './components/Home/carousel'
 
 export default function Home() {
   return (
