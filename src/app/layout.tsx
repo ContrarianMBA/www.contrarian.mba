@@ -38,9 +38,9 @@ export default function RootLayout({ children }: Props) {
       className={`${montserrat.variable} ${merriweather.variable}`}
       data-bs-theme={theme}
     >
-      <body className="d-flex flex-column">
+      <body className="d-flex flex-column vh-100">
         <Header theme={theme} toggleTheme={toggleTheme} />
-        {children}
+        <main className="flex-grow-1">{children}</main>
       </body>
     </html>
   )
