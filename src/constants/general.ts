@@ -1,4 +1,4 @@
-export const SITE_NAME = 'Contrarian'
+export const SITE_NAME = 'Contrarian MBA'
 
 export const NAVIGATION_LINKS = [
   {
