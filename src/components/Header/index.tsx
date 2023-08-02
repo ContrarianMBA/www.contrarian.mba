@@ -1,6 +1,6 @@
 'use client'
-import { NAVIGATION_LINKS, SITE_NAME } from '@/constants'
 import React from 'react'
+import { NAVIGATION_LINKS, SITE_NAME } from '@/constants'
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
