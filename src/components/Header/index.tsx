@@ -39,7 +39,7 @@ export function Header({ theme, toggleTheme }: Props) {
         className="main-navbar bg-body-tertiary"
       >
         <Container>
-          <Navbar.Brand className="fs-1 fw-bold" href="/">
+          <Navbar.Brand className="fs-1 fw-bold mb-2" href="/">
             {SITE_NAME}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar-nav" />
