@@ -1,1 +1,1 @@
-export const SITE_NAME = 'Contrarian'
+export const SITE_NAME = 'Contrarian MBA'

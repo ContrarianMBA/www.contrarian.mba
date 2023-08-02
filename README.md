@@ -1,1 +1,1 @@
-# contrarian.mba
+# Contrarian MBA
