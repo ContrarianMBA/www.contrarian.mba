@@ -1,12 +1,12 @@
 import React from 'react'
-import type { Metadata } from 'next'
-import { Montserrat, Merriweather } from 'next/font/google'
-import '@/app/scss/style.scss'
 import { Header } from '@/app/components/Header'
+import '@/app/scss/style.scss'
+import type { Metadata } from 'next'
+import { Merriweather, Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  // weight: ['400', '700'],
   variable: '--font-montserrat',
   display: 'swap',
 })
