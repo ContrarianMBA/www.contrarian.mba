@@ -1,8 +1,12 @@
+'use client'
 import React from 'react'
-import type { Metadata } from 'next'
 import { Montserrat, Merriweather } from 'next/font/google'
-import '@/app/scss/style.scss'
-import { Header } from '@/app/components/Header'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { Header } from '@/components/Header'
+import '@/scss/style.scss'
+
+config.autoAddCss = false
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -17,23 +21,25 @@ const merriweather = Merriweather({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'Contrarian.mba',
-  description: '',
-}
-
 type Props = {
   children: React.ReactNode
 }
 
 export default function RootLayout({ children }: Props) {
+  const [theme, setTheme] = React.useState<'light' | 'dark'>('light')
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
   return (
     <html
       lang="en"
       className={`${montserrat.variable} ${merriweather.variable}`}
+      data-bs-theme={theme}
     >
       <body className="d-flex flex-column">
-        <Header />
+        <Header theme={theme} toggleTheme={toggleTheme} />
         {children}
       </body>
     </html>
