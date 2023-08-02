@@ -45,7 +45,7 @@ export function Header({ theme, toggleTheme }: Props) {
           <Navbar.Toggle aria-controls="main-navbar-nav" />
           <Navbar.Offcanvas id="main-navbar-nav" placement="end">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title className="d-flex align-items-center ">
+              <Offcanvas.Title className="d-flex align-items-center">
                 {SITE_NAME}
                 <ThemeToggleButton
                   theme={theme}

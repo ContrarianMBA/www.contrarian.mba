@@ -15,7 +15,7 @@ export const NAVIGATION_LINKS = [
   },
 ]
 
-export const CarouselLists = [
+export const CAROUSEL_ITEMS = [
   {
     name: 'Frank Zappa',
     quote: 'So many books, so little time.',
