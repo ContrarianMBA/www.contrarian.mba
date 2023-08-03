@@ -14,6 +14,10 @@ dev: install
 run: install
 	npm run build && npm run start
 
+## sync_data - Download data used to power site from Airtable
+sync_data:
+	python3 scripts/sync_data.py
+
 ## clean - clean previous builds
 clean:
 	rm -rf out/*
