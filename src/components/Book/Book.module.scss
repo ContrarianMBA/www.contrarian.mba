@@ -1,0 +1,107 @@
+.books {
+  box-sizing: border-box;
+  font-size: calc(0.65em + 0.05vw);
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 308px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.gloss {
+  position: absolute;
+  top: 0;
+  z-index: 200;
+  overflow: hidden;
+  width: 20%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  transition: all 0.5s;
+  transform: translateX(-50%) rotateY(0deg);
+  transform-origin: left center;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  margin-left: -100px;
+  transition: transform 0.5s;
+  transform: translateX(0);
+  transform-origin: left center;
+  backface-visibility: hidden;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  border: solid 1px grey;
+  background: white;
+  transition: all 1s;
+  padding: 10% 10%;
+  padding-top: 5%;
+  z-index: 1;
+}
+
+.description h1 {
+  font-size: calc(0.75em + 0.1vw);
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.book:hover {
+  cursor: pointer;
+}
+
+.book:hover .cover {
+  transform: perspective(1000px) rotateY(-80deg);
+}
+
+.book:hover .gloss {
+  transform: perspective(1000px) rotateY(-80deg) translateX(100%) scaleX(5);
+}
+
+.book:hover .description {
+  transform: translateX(20%);
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  height: 2em;
+  margin: 0 auto;
+  color: grey;
+}
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  font-size: 1.75em;
+  margin-right: 0.2em;
+}
+
+.rating > span ~ span:before {
+  content: '\2605';
+  position: absolute;
+  color: #8d2a06;
+}
