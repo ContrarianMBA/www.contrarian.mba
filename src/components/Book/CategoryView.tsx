@@ -1,5 +1,5 @@
 import { Book } from '@data/contrarianmba.json';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 type Props = {
     book: Book;
