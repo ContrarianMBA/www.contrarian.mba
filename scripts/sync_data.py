@@ -116,6 +116,7 @@ class Book(AirTableRecord):
             "summary": self.summary,
             "amazonProductID": self.amazon_product_id,
             "amazonProductURL": self.amazon_product_url,
+            "amazonImageURL": self.amazon_image_url,
             "hasInventory": self.has_inventory,
         }
         return payload
@@ -152,7 +153,7 @@ class Book(AirTableRecord):
         return url
 
     @property
-    def get_amazon_image_url(self):
+    def amazon_image_url(self):
         url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={self.amazon_product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
         return url
 
