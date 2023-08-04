@@ -4,8 +4,7 @@
     perspective: 350px;
     height: 470px;
     background-color: #15312C;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 
     &.best::before {
         content: 'BEST';
@@ -54,7 +53,7 @@
         padding: 30px;
         transition: transform 0.7s ease-in-out;
 
-        p {
+        p, a.btn {
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
@@ -66,7 +65,7 @@
 
     &:hover .preface {
         transform: translateY(-216px);
-        p {
+        p, a.btn {
             opacity: 1;
         }
     }

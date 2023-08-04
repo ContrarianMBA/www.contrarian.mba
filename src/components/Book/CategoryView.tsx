@@ -8,7 +8,7 @@ export function BookCategoryView({ book }: Props) {
     const bestClass = book.bestInCategory ? ' best' : '';
 
     return (
-        <div className={`book${bestClass}`}>
+        <div className={`book${bestClass} mb-3`}>
             <div className="book-cover">
                 <img
                     src={book.amazonImageURL}
