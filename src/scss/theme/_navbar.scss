@@ -24,3 +24,10 @@
   -webkit-animation: headerSlideDown 0.95s ease forwards;
           animation: headerSlideDown 0.95s ease forwards;
 }
+
+.category-labels {
+    color: $black;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 12px;
+}
