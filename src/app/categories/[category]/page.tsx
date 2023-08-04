@@ -37,7 +37,7 @@ export default function CategoryPage({ params: { category } }: Props) {
                             <h1>{categoryName}</h1>
                         </Col>
                         {books.map((book) => (
-                            <Col lg={3} key={book.id}>
+                            <Col lg={4} key={book.id}>
                                 <BookCategoryView book={book} />
                             </Col>
                         ))}
