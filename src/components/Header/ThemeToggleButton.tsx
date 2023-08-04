@@ -1,20 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { ColorMode } from '@/types';
 import styles from './ThemeToggleButton.module.scss';
 
 type Props = {
-    theme: 'light' | 'dark';
-    themeToggle: () => void;
+    colorMode: ColorMode;
+    toggleColorMode: () => void;
     mobileNav?: boolean;
 };
-function Component({ theme, themeToggle, mobileNav = false }: Props) {
-    const icon = theme === 'light' ? faMoon : faSun;
+function Component({ colorMode, toggleColorMode, mobileNav = false }: Props) {
+    const icon = colorMode === 'light' ? faMoon : faSun;
     const mobileNavClass = mobileNav ? styles['mobile-nav'] : '';
     return (
         <button
             type="button"
-            onClick={themeToggle}
+            onClick={toggleColorMode}
             className={`${styles.button} ${mobileNavClass}`}
         >
             <FontAwesomeIcon icon={icon} />

@@ -3,13 +3,14 @@ import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { SITE_NAME } from '@/constants';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import React from 'react';
+import { ColorMode } from '@/types';
 
 type Props = {
-    theme: 'light' | 'dark';
-    toggleTheme: () => void;
+    colorMode: ColorMode;
+    toggleColorMode: () => void;
 };
 
-export function Header({ theme, toggleTheme }: Props) {
+export function Header({ colorMode, toggleColorMode }: Props) {
     const [isFixed, setFixed] = React.useState(false);
 
     const handleScroll = () => {
@@ -46,8 +47,8 @@ export function Header({ theme, toggleTheme }: Props) {
                             <Offcanvas.Title className="d-flex align-items-center">
                                 {SITE_NAME}
                                 <ThemeToggleButton
-                                    theme={theme}
-                                    themeToggle={toggleTheme}
+                                    colorMode={colorMode}
+                                    toggleColorMode={toggleColorMode}
                                     mobileNav
                                 />
                             </Offcanvas.Title>
@@ -59,8 +60,8 @@ export function Header({ theme, toggleTheme }: Props) {
                             </Nav>
                             <Nav className="d-none d-md-flex align-items-center">
                                 <ThemeToggleButton
-                                    theme={theme}
-                                    themeToggle={toggleTheme}
+                                    colorMode={colorMode}
+                                    toggleColorMode={toggleColorMode}
                                 />
                             </Nav>
                         </Offcanvas.Body>
