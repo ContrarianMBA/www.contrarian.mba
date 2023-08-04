@@ -5,21 +5,29 @@ type Props = {
     book: Book;
 };
 export function BookCategoryView({ book }: Props) {
+    const bestClass = book.bestInCategory ? ' best' : '';
+
     return (
-        <Card>
-            <Card.Img src={book.amazonImageURL} />
-            <Card.Body>
-                <Card.Title>
-                    {book.title}{' '}
-                    {book.bestInCategory && (
-                        <span className="badge bg-primary">Best</span>
-                    )}
-                </Card.Title>
-                <Card.Text>{book.summary}</Card.Text>
-                <a href={book.amazonProductURL} className="btn btn-success">
-                    Buy
+        <div className={`book${bestClass}`}>
+            <div className="book-cover">
+                <img
+                    src={book.amazonImageURL}
+                    alt={book.title}
+                    className="book-top"
+                />
+                <img src="/images/book-side.svg" className="book-side" alt="" />
+            </div>
+            <div className="preface">
+                <h6>{book.title}</h6>
+                <p>{book.summary}</p>
+                <a
+                    href={book.amazonProductURL}
+                    className="btn btn-primary stretched-link"
+                    target="_blank"
+                >
+                    BUY
                 </a>
-            </Card.Body>
-        </Card>
+            </div>
+        </div>
     );
 }
