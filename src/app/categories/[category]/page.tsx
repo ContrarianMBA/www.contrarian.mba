@@ -25,7 +25,7 @@ export default function CategoryPage({ params: { category } }: Props) {
         [],
     );
     return (
-        <Container>
+        <Container className="mt-5 pt-5">
             <Row>
                 <Col lg={3}>
                     <h4>Categories</h4>

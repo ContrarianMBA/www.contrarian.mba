@@ -20,19 +20,20 @@
     }
 }
 
-.main-navbar.fixed-top {
-    -webkit-animation: headerSlideDown 0.95s ease forwards;
-    animation: headerSlideDown 0.95s ease forwards;
-}
+.main-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1035;
 
-.mobile-navbar {
-    display: flex;
-    place-content: flex-end;
-    margin-right: -12px;
-}
+    &.fixed-top {
+        position: fixed;
+        -webkit-animation: headerSlideDown 0.95s ease forwards;
+        animation: headerSlideDown 0.95s ease forwards;
 
-.category-labels {
-    text-decoration: none;
-    margin-right: 11px;
-    font-size: 12px;
+        > .navbar {
+            @extend .bg-body-tertiary;
+        }
+    }
 }
