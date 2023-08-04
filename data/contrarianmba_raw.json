@@ -1,0 +1,1272 @@
+{
+    "books": [
+        {
+            "id": "rece73Uc5Xj588TpY",
+            "createdTime": "2023-08-02T19:53:38.000Z",
+            "fields": {
+                "Amazon Product ID": "0812975219",
+                "Has Inventory?": true,
+                "Title": "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto)",
+                "Summary": "Finance people aren't as smart as they tell you they are.",
+                "Amazon URL": "https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219/ref=pd_lpo_sccl_3/141-6117389-4524729?pd_rd_w=8qZfm&content-id=amzn1.sym.116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_p=116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_r=NPGM2C3XKSQE3NA6FD5B&pd_rd_wg=8BUuI&pd_rd_r=cde994eb-c6b6-46c1-b2c3-6b53fd0805d8&pd_rd_i=0812975219&psc=1",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "0812975219"
+            }
+        },
+        {
+            "id": "recNzQwmhpluHdMfF",
+            "createdTime": "2023-08-02T19:53:38.000Z",
+            "fields": {
+                "Amazon Product ID": "081297381X",
+                "Title": "The Black Swan: Second Edition: The Impact of the Highly Improbable",
+                "Amazon URL": "https://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "081297381X"
+            }
+        },
+        {
+            "id": "recTdVaEw1FuGpu0D",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0812979680",
+                "Has Inventory?": true,
+                "Title": "Antifragile: Things That Gain from Disorder (Incerto)",
+                "Summary": "You could get 100% of the core principles of investing and business from these Taleb books.",
+                "Amazon URL": "https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "0812979680"
+            }
+        },
+        {
+            "id": "rechqQfrpNCyO0cGb",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0425284646",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "Skin in the Game: Hidden Asymmetries in Daily Life (Incerto)",
+                "Summary": "One of the best principles in investing and building businesses. You can look at any economic transaction with this lense and quickly see the pitfalls.",
+                "Amazon URL": "https://www.amazon.com/Skin-Game-Hidden-Asymmetries-Daily/dp/0425284646/ref=pd_lpo_sccl_2/141-6117389-4524729?pd_rd_w=8qZfm&content-id=amzn1.sym.116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_p=116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_r=NPGM2C3XKSQE3NA6FD5B&pd_rd_wg=8BUuI&pd_rd_r=cde994eb-c6b6-46c1-b2c3-6b53fd0805d8&pd_rd_i=0425284646&psc=1",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "0425284646"
+            }
+        },
+        {
+            "id": "recy8kNTWVTCGLn0J",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0393310728",
+                "Has Inventory?": true,
+                "Title": "How to Lie with Statistics",
+                "Summary": "Business typically comes down to numbers, so you should be versed in how they're used or often misused.",
+                "Amazon URL": "https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "0393310728"
+            }
+        },
+        {
+            "id": "recqEZ8ftve1S4mGu",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0062937650",
+                "Has Inventory?": true,
+                "Title": "Influence, New and Expanded: The Psychology of Persuasion",
+                "Summary": "Behind most areas of business is persuasion. Sales, marketing, recruiting, etc. Charlie Munger loves this book. ",
+                "Amazon URL": "https://www.amazon.com/Influence-New-Expanded-Psychology-Persuasion/dp/0062937650/ref=sr_1_1?keywords=influence+by+robert+cialdini&qid=1685570985&sprefix=influe%2Caps%2C111&sr=8-1",
+                "Category": [
+                    "recGCgJwhaUcdySf3"
+                ],
+                "ID": "0062937650"
+            }
+        },
+        {
+            "id": "recb0ZyrbEJX8IsnP",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1578645018",
+                "Has Inventory?": true,
+                "Title": "Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger",
+                "Summary": "Common sense investing principles",
+                "Amazon URL": "https://www.amazon.com/Poor-Charlies-Almanack-Charles-Expanded/dp/1578645018",
+                "Category": [
+                    "recODmbNlqOMNFBsV"
+                ],
+                "ID": "1578645018"
+            }
+        },
+        {
+            "id": "rectTwQceBnoAZs2z",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1324051132",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "A Random Walk Down Wall Street",
+                "Summary": "Common sense investing backed by enormous data. ",
+                "Amazon URL": "https://www.amazon.com/Random-Walk-Down-Wall-Street/dp/1324051132/ref=sr_1_1?crid=I0LTWTEWFUBE&keywords=random+walk+down+wall+street&qid=1690313576&sprefix=random+walk+down+wall+street%2Caps%2C17593&sr=8-1",
+                "Category": [
+                    "recODmbNlqOMNFBsV"
+                ],
+                "ID": "1324051132"
+            }
+        },
+        {
+            "id": "recGVwjixtNo3mvA6",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B071CTK28D",
+                "Has Inventory?": true,
+                "Title": "Principles: Life and Work",
+                "Summary": "The second greatest hedge fund ever, as told by the founder.",
+                "Amazon URL": "https://www.amazon.com/Principles-Life-Work-Ray-Dalio-ebook/dp/B071CTK28D/ref=sr_1_5?crid=MXRIEIU8C5G7&keywords=ray+dalio&qid=1690382809&s=books&sprefix=ray+dalio%2Cstripbooks%2C101&sr=1-5",
+                "Category": [
+                    "recODmbNlqOMNFBsV"
+                ],
+                "ID": "B071CTK28D"
+            }
+        },
+        {
+            "id": "recJ1ifFrBeYtJbtY",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1455586692",
+                "Has Inventory?": true,
+                "Title": "Deep Work: Rules for Focused Success in a Distracted World",
+                "Summary": "Book 1 for anyone looking to accomplish anything in any field. ",
+                "Amazon URL": "https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_1?crid=34GGWA3O4PZSD&keywords=deep+work&qid=1679966896&sprefix=deep+work%2Caps%2C131&sr=8-1",
+                "Category": [
+                    "rec0TkIJnHlDWmCLr"
+                ],
+                "ID": "1455586692"
+            }
+        },
+        {
+            "id": "rec9JJiLeLEK3v93G",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B07DBRBP7G",
+                "Has Inventory?": true,
+                "Title": "Digital Minimalism: Choosing a Focused Life in a Noisy World",
+                "Summary": "Book 2 on being hyper productive while working less.",
+                "Amazon URL": "https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy-ebook/dp/B07DBRBP7G?ref_=ast_author_dp",
+                "Category": [
+                    "rec0TkIJnHlDWmCLr"
+                ],
+                "ID": "B07DBRBP7G"
+            }
+        },
+        {
+            "id": "recwKMAELYCfWwa2s",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0307465357",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich",
+                "Summary": "Lean startup and digital minimalism principles for your self. ",
+                "Amazon URL": "https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357",
+                "Category": [
+                    "rec0TkIJnHlDWmCLr"
+                ],
+                "ID": "0307465357"
+            }
+        },
+        {
+            "id": "recVdelK89HBxajqK",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B0058DRUV6",
+                "Has Inventory?": true,
+                "Title": "Good to Great: Why Some Companies Make the Leap...And Others Don't",
+                "Summary": "Commonly referenced business book.",
+                "Amazon URL": "https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/ref=sr_1_1?crid=1TRRBESO2TJ7I&keywords=good+to+great&qid=1690318443&sprefix=good+to%2Caps%2C686&sr=8-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B0058DRUV6"
+            }
+        },
+        {
+            "id": "recqHAjoXeUH0iCj7",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0670921602",
+                "Has Inventory?": true,
+                "Title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+                "Summary": "Modern startup principles.",
+                "Amazon URL": "https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0670921602/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "0670921602"
+            }
+        },
+        {
+            "id": "recdQM0I09hnH7u4c",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0679762884",
+                "Has Inventory?": true,
+                "Title": "High Output Management",
+                "Summary": "Management principles from Intel's founder.",
+                "Amazon URL": "https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "0679762884"
+            }
+        },
+        {
+            "id": "recZa7ZnSsXnFzBwy",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0062292986",
+                "Has Inventory?": true,
+                "Title": "Crossing the Chasm, 3rd Edition: Marketing and Selling Disruptive Products to Mainstream Customers",
+                "Summary": "Product development for technology.",
+                "Amazon URL": "https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690317550&sr=1-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "0062292986"
+            }
+        },
+        {
+            "id": "recjlaK1zAPu1PZb2",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B002PJ4SU2",
+                "Has Inventory?": true,
+                "Title": "Behind the Cloud: The Untold Story of How Salesforce.com Went from Idea to Billion-Dollar Company-and Revolutionized an Industry",
+                "Summary": "The founder of SaaS tells his story.",
+                "Amazon URL": "https://www.amazon.com/gp/product/B002PJ4SU2?storeType=ebooks&pf_rd_p=7eff61ae-ef34-4cd6-acc9-37bbf183d156&pf_rd_r=RBD62QPZ11PJ9BKNN1JB&pd_rd_wg=Bob6M&pd_rd_i=B002PJ4SU2&ref_=dbs_t_def_rwt_wigo_sp_recs_wigo_10&pd_rd_w=574Fs&content-id=amzn1.sym.7eff61ae-ef34-4cd6-acc9-37bbf183d156&pd_rd_r=bb216bd9-5851-4e3c-8bad-bdadd2debce2",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B002PJ4SU2"
+            }
+        },
+        {
+            "id": "recUAdDkWwGOEZmua",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B00E257T6C",
+                "Has Inventory?": true,
+                "Title": "The Design of Everyday Things",
+                "Summary": "Design is an overlooked and essential piece of business success. Norman was an early engineer at the greatest product design company, Apple.",
+                "Amazon URL": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/ref=sr_1_1?crid=9U1JTVT53NVW&keywords=don+norman&qid=1690394469&sprefix=don+norman%2Caps%2C109&sr=8-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B00E257T6C"
+            }
+        },
+        {
+            "id": "recso4UXRVmGwVjeX",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B00J6YBOFQ",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "Zero to One: Notes on Startups, or How to Build the Future",
+                "Summary": "Best book on startup principles.",
+                "Amazon URL": "https://www.amazon.com/Zero-One-Notes-Startups-Future-ebook/dp/B00J6YBOFQ/ref=sr_1_1?crid=FK77LNOG27Q&keywords=zero+to+one&qid=1690382605&sprefix=zero+to+one%2Caps%2C112&sr=8-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B00J6YBOFQ"
+            }
+        },
+        {
+            "id": "recvIYstIVVE9EgcX",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B081Y3R657",
+                "Has Inventory?": true,
+                "Title": "No Rules Rules: Netflix and the Culture of Reinvention",
+                "Summary": "Contrarian principles for building an enduring company.",
+                "Amazon URL": "https://www.amazon.com/No-Rules-Netflix-Culture-Reinvention-ebook/dp/B081Y3R657/ref=sr_1_1?crid=155EKEZ65XT59&keywords=no+rules+rules&qid=1690314904&sprefix=no+r%2Caps%2C1324&sr=8-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B081Y3R657"
+            }
+        },
+        {
+            "id": "recZRQRCbaSzjJRIF",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B078FZ9SYB",
+                "Has Inventory?": true,
+                "Title": "Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs",
+                "Summary": "One of the greatest venture capitalists tells how to functionally build an amazing company.",
+                "Amazon URL": "https://www.amazon.com/Measure-What-Matters-Google-Foundation-ebook/dp/B078FZ9SYB/ref=sr_1_1?keywords=measure+what+matters+by+john+doerr&qid=1690382774&s=books&sprefix=john+doe%2Cstripbooks%2C102&sr=1-1",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "B078FZ9SYB"
+            }
+        },
+        {
+            "id": "recWsVLoSVERsjTn0",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1524761419",
+                "Has Inventory?": true,
+                "Title": "Blitzscaling: The Lightning-Fast Path to Building Massively Valuable Companies",
+                "Summary": "An interesting book on how to grow quickly from the LinkedIn founder, member of the PayPal mafia, and friend of Jeffrey Epstein.",
+                "Amazon URL": "https://www.amazon.com/Blitzscaling-Lightning-Fast-Building-Massively-Companies/dp/1524761419",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "1524761419"
+            }
+        },
+        {
+            "id": "recGtNiWzsGaQ017X",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0063018292",
+                "Has Inventory?": true,
+                "Title": "Ask Your Developer: How to Harness the Power of Software Developers and Win in the 21st Century",
+                "Summary": "The API-driven business by the founder of one of the most successful API companies.",
+                "Amazon URL": "https://www.amazon.com/Ask-Your-Developer-Software-Developers/dp/0063018292",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "0063018292"
+            }
+        },
+        {
+            "id": "recdM7kfjThh32Z6w",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0062273205",
+                "Has Inventory?": true,
+                "Title": "The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers",
+                "Summary": "Startup tales from the least cool investor ever.",
+                "Amazon URL": "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recmnt0YztqFUD8Kb"
+                ],
+                "ID": "0062273205"
+            }
+        },
+        {
+            "id": "recpbzhH8AGBIrX4e",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0471568864",
+                "Has Inventory?": true,
+                "Title": "Hard Drive: Bill Gates and the Making of the Microsoft Empire",
+                "Summary": "The first giant tech founder. ",
+                "Amazon URL": "https://www.amazon.com/Hard-Drive-Making-Microsoft-Empire/dp/0471568864/ref=sr_1_2?crid=E3UQBZDT2O5R&keywords=hard+drive+bill+gates&qid=1690316978&s=digital-text&sprefix=hard+d%2Cdigital-text%2C1455&sr=1-2-catcorr",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "0471568864"
+            }
+        },
+        {
+            "id": "recbZUVXQJYmoVBgM",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B07PBJBGPJ",
+                "Has Inventory?": true,
+                "Title": "Return to the Little Kingdom: How Apple and Steve Jobs Changed the World",
+                "Summary": "Apple's tale told by one of the greatest venture capitalists.",
+                "Amazon URL": "https://www.amazon.com/Return-Little-Kingdom-Steve-Creation-ebook/dp/B07PBJBGPJ/ref=sr_1_1?keywords=michael+moritz&qid=1690384163&s=books&sprefix=michael+moritz%2Cstripbooks%2C102&sr=1-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "B07PBJBGPJ"
+            }
+        },
+        {
+            "id": "recUOEth4TmdIyf25",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B004W2UBYW",
+                "Has Inventory?": true,
+                "Title": "Steve Jobs",
+                "Summary": "One of the greats. ",
+                "Amazon URL": "https://www.amazon.com/Steve-Jobs-Walter-Isaacson-ebook/dp/B004W2UBYW/ref=sr_1_1?keywords=steve+jobs+by+walter+isaacson&qid=1690383936&sprefix=steve+jobs%2Caps%2C117&sr=8-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "B004W2UBYW"
+            }
+        },
+        {
+            "id": "rec0x4n4D9GS54OLJ",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0143118048",
+                "Has Inventory?": true,
+                "Title": "Googled: The End of the World As We Know It",
+                "Summary": "Great tale of Google.",
+                "Amazon URL": "https://www.amazon.com/Googled-End-World-As-Know/dp/0143118048/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690315164&sr=8-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "0143118048"
+            }
+        },
+        {
+            "id": "recW7XuXPdMUniEsn",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0316219282",
+                "Has Inventory?": true,
+                "Title": "The Everything Store: Jeff Bezos and the Age of Amazon",
+                "Summary": "One of the greatest American startups.",
+                "Amazon URL": "https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon/dp/0316219282/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690316500&sr=8-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "0316219282"
+            }
+        },
+        {
+            "id": "recUFbTzpP3YQC4Qj",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1645720837",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "The PayPal Wars: Battles with Ebay, the Media, the Mafia, and the Rest of Planet Earth",
+                "Summary": "The story of PayPal.",
+                "Amazon URL": "https://www.amazon.com/PayPal-Wars-Battles-Media-Planet/dp/1645720837/ref=sr_1_1?keywords=paypal+wars&qid=1690315869&sr=8-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "1645720837"
+            }
+        },
+        {
+            "id": "recyWZ0CYOZHrbnUk",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1444761978",
+                "Title": "Hatching Twitter",
+                "Summary": "Twitter startup story.",
+                "Amazon URL": "https://www.amazon.com/Hatching-Twitter-Nick-Bilton/dp/1444761978/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690317926&sr=1-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "1444761978"
+            }
+        },
+        {
+            "id": "recXOtWvMu2yWKxrb",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1982132620",
+                "Has Inventory?": true,
+                "Title": "Amazon Unbound: Jeff Bezos and the Invention of a Global Empire",
+                "Summary": "Amazon's tale continued.",
+                "Amazon URL": "https://www.amazon.com/Amazon-Unbound-Invention-Global-Empire/dp/1982132620/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "1982132620"
+            }
+        },
+        {
+            "id": "recFLUEj9xvVpjWyc",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B08CV6GB22",
+                "Has Inventory?": true,
+                "Title": "Billion Dollar Loser: The Epic Rise and Spectacular Fall of Adam Neumann and WeWork",
+                "Summary": "The ways in which even the best ideas can be destroyed by unethical behavior and eager investors.",
+                "Amazon URL": "https://www.amazon.com/Billion-Dollar-Loser-Spectacular-Neumann-ebook/dp/B08CV6GB22/ref=sr_1_1?crid=2HXGQVFPQQGDU&keywords=wework+book&qid=1690384293&s=books&sprefix=wework+book%2Cstripbooks%2C101&sr=1-1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "B08CV6GB22"
+            }
+        },
+        {
+            "id": "rech3l1BRJVsLGnSo",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0393652246",
+                "Has Inventory?": true,
+                "Title": "Super Pumped: The Battle for Uber",
+                "Summary": "Uber's startup tale. ",
+                "Amazon URL": "https://www.amazon.com/Super-Pumped-Battle-Mike-Isaac/dp/0393652246",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "0393652246"
+            }
+        },
+        {
+            "id": "recrBKe8tJ3dzof4J",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0385545452",
+                "Title": "Power Play: Tesla, Elon Musk, and the Bet of the Century",
+                "Summary": "The story of the greatest living entrepreneur.",
+                "Amazon URL": "https://www.amazon.com/Power-Play-Tesla-Elon-Century/dp/0385545452/ref=asc_df_0385545452/?tag=hyprod-20&linkCode=df0&hvadid=475811913007&hvpos=&hvnetw=g&hvrand=10892906182217940018&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028278&hvtargid=pla-1246542147757&psc=1",
+                "Category": [
+                    "recxGtp3gONwq2Hc7"
+                ],
+                "ID": "0385545452"
+            }
+        },
+        {
+            "id": "rec3kt8nuJmCb6S8f",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1400077303",
+                "Has Inventory?": true,
+                "Title": "Titan: The Life of John D. Rockefeller, Sr.",
+                "Summary": "The greatest American businessman. ",
+                "Amazon URL": "https://www.amazon.com/Titan-Life-John-Rockefeller-Sr/dp/1400077303/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690316450&sr=8-1",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "1400077303"
+            }
+        },
+        {
+            "id": "rec639Jj2OQnrSJSu",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B003CIQ57E",
+                "Has Inventory?": true,
+                "Title": "The House of Morgan: An American Banking Dynasty and the Rise of Modern Finance",
+                "Summary": "Tales of the greatest American financier.",
+                "Amazon URL": "https://www.amazon.com/House-Morgan-American-Banking-Dynasty-ebook/dp/B003CIQ57E/ref=sr_1_1?crid=61MRD5JF60XJ&keywords=house+of+morgan&qid=1690316417&sprefix=hous%2Caps%2C1634&sr=8-1",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "B003CIQ57E"
+            }
+        },
+        {
+            "id": "recVifC5WKPF7bnqy",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0375410422",
+                "Has Inventory?": true,
+                "Title": "Duveen: A Life in Art",
+                "Summary": "Tales of the greatest art dealer.",
+                "Amazon URL": "https://www.amazon.com/Duveen-Life-Art-Meryle-Secrest/dp/0375410422/ref=sr_1_1?keywords=joseph+duveen&qid=1690317665&sr=8-1",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "0375410422"
+            }
+        },
+        {
+            "id": "recAccTL63d2361bx",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1448217520",
+                "Title": "The House of Getty",
+                "Summary": "Tales of one of the greatest oilmen.",
+                "Amazon URL": "https://www.amazon.com/House-Getty-Russell-Miller/dp/1448217520/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "1448217520"
+            }
+        },
+        {
+            "id": "recWPdeOPklsecXyX",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B000GR4XQO",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "Howard: The Amazing Mr. Hughes",
+                "Summary": "One of the greatest American entrepreneurs told by his right hand man.",
+                "Amazon URL": "https://www.amazon.com/Howard-Amazing-Hughes-Noah-Dietrich/dp/B000GR4XQO",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "B000GR4XQO"
+            }
+        },
+        {
+            "id": "rec7xOaZH7CpDLIT5",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B00EXTVS0K",
+                "Has Inventory?": true,
+                "Title": "Sons of Wichita: How the Koch Brothers Became America's Most Powerful and Private Dynasty",
+                "Summary": "The story of the greatest modern American business (not startup).",
+                "Amazon URL": "https://www.amazon.com/Sons-Wichita-Brothers-Americas-Powerful-ebook/dp/B00EXTVS0K/ref=sr_1_1?crid=36AWQ0QNBLDGM&keywords=sons+of+wichita&qid=1690317111&sprefix=sons+of+w%2Caps%2C760&sr=8-1",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "B00EXTVS0K"
+            }
+        },
+        {
+            "id": "rec0CZD80AkzA3mzr",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B009MYD9F8",
+                "Has Inventory?": true,
+                "Title": "The Snowball: Warren Buffett and the Business of Life",
+                "Summary": "A Warren Buffett biography. ",
+                "Amazon URL": "https://www.amazon.com/Snowball-Warren-Buffett-Business-Life-ebook/dp/B009MYD9F8/ref=sr_1_1?keywords=snowball+warren+buffett&qid=1690383957&sprefix=snowball%2Caps%2C117&sr=8-1",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "B009MYD9F8"
+            }
+        },
+        {
+            "id": "recBAz4A4rLG5c362",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1591845548",
+                "Title": "Who is Michael Ovitz?",
+                "Summary": "Best tale of Hollywood through one of the greatest agents.",
+                "Amazon URL": "https://www.amazon.com/Who-Michael-Ovitz/dp/1591845548",
+                "Category": [
+                    "rec3GT7BmlJpNeIzL"
+                ],
+                "ID": "1591845548"
+            }
+        },
+        {
+            "id": "reccMZo9JbQ7T8ZOA",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0066211700",
+                "Has Inventory?": true,
+                "Title": "The Forgotten Man: A New History of the Great Depression",
+                "Summary": "How the government (caused?) worsened the great depression and human suffering.",
+                "Amazon URL": "https://www.amazon.com/Forgotten-Man-History-Great-Depression/dp/0066211700/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1690316304&sr=8-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "0066211700"
+            }
+        },
+        {
+            "id": "recWb4TwqlyJ8liKC",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0465022030",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "Economic Facts and Fallacies",
+                "Summary": "Common sense economics. ",
+                "Amazon URL": "https://www.amazon.com/Economic-Facts-Fallacies-Thomas-Sowell/dp/0465022030/ref=sr_1_1?crid=2DSYVIFQJ2Y5Q&keywords=economic+facts+and+fallacies&qid=1690314406&sprefix=economic+facts+and%2Caps%2C892&sr=8-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "0465022030"
+            }
+        },
+        {
+            "id": "recWg5HwXNJWbYbYG",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B003E20ZRY",
+                "Has Inventory?": true,
+                "Title": "Liar's Poker",
+                "Summary": "The book that put Michael Lewis on the map. His wild tale of Wall Street greed. Made me want to go into finance.",
+                "Amazon URL": "https://www.amazon.com/Liars-Poker-Norton-Paperback-Michael-ebook/dp/B003E20ZRY/ref=sr_1_1?keywords=liars+poker&qid=1690313498&sr=8-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "B003E20ZRY"
+            }
+        },
+        {
+            "id": "recggXVv4bzGnPIJT",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0061655554",
+                "Has Inventory?": true,
+                "Title": "Barbarians at the Gate: The Fall of RJR Nabisco",
+                "Summary": "Great tale of leveraged buyouts, 80s/90s finance.",
+                "Amazon URL": "https://www.amazon.com/s?k=barbarians+at+the+gate&sprefix=barbarians+%2Caps%2C117&ref=nb_sb_ss_ts-doa-p_1_11",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "0061655554"
+            }
+        },
+        {
+            "id": "rec55yynZ5zmUmy3O",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B000FC1KZC",
+                "Has Inventory?": true,
+                "Title": "When Genius Failed: The Rise and Fall of Long-Term Capital Management",
+                "Summary": "Tale of math brilliance making finance folly.",
+                "Amazon URL": "https://www.amazon.com/When-Genius-Failed-Long-Term-Management-ebook/dp/B000FC1KZC/ref=sr_1_1?crid=2SZW6M04TBS1C&keywords=when+genius+failed+by+roger+lowenstein&qid=1690314659&sprefix=when+genius+failed%2Caps%2C1092&sr=8-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "B000FC1KZC"
+            }
+        },
+        {
+            "id": "recW3OXkUWGWLszQQ",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B0036QVONC",
+                "Has Inventory?": true,
+                "Title": "The Housing Boom and Bust",
+                "Summary": "How and why the housing market boomed and ultimately busted.",
+                "Amazon URL": "https://www.amazon.com/Housing-Boom-Bust-Revised-ebook/dp/B0036QVONC/ref=sr_1_1?keywords=the+housing+boom+and+bust+thomas+sowell&qid=1690384622&sprefix=sowell+housing%2Caps%2C106&sr=8-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "B0036QVONC"
+            }
+        },
+        {
+            "id": "recJitDsGJsHmL4r6",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0393338827",
+                "Has Inventory?": true,
+                "Title": "The Big Short: Inside the Doomsday Machine",
+                "Summary": "The 2008 collapse told from the inside.",
+                "Amazon URL": "https://www.amazon.com/Big-Short-Inside-Doomsday-Machine/dp/0393338827/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690383793&sr=1-1",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "0393338827"
+            }
+        },
+        {
+            "id": "recp36tNPk9klBxlH",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B07P1NNTSD",
+                "Has Inventory?": true,
+                "Title": "The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution",
+                "Summary": "The greatest hedge fund ever.",
+                "Amazon URL": "https://www.amazon.com/Man-Who-Solved-Market-Revolution-ebook/dp/B07P1NNTSD",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "B07P1NNTSD"
+            }
+        },
+        {
+            "id": "recVYg5kHYr7hTIxm",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0393351599",
+                "Has Inventory?": true,
+                "Title": "Flash Boys: A Wall Street Revolt",
+                "Summary": "The best book on how Wall Street trading functions today.",
+                "Amazon URL": "https://www.amazon.com/Flash-Boys-Wall-Street-Revolt/dp/0393351599/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "0393351599"
+            }
+        },
+        {
+            "id": "recv8hgl90Yktx0Sv",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B000RH0C8G",
+                "Has Inventory?": true,
+                "Title": "Moneyball: The Art of Winning an Unfair Game",
+                "Summary": "Applying business and finance lessons to sport.",
+                "Amazon URL": "https://www.amazon.com/Moneyball-Art-Winning-Unfair-Game-ebook/dp/B000RH0C8G/ref=sr_1_2?crid=1RE8T1XK6HLGO&keywords=moneyball&qid=1690383874&sprefix=moneyball%2Caps%2C108&sr=8-2",
+                "Category": [
+                    "rechl9HG4Vz7psjls"
+                ],
+                "ID": "B000RH0C8G"
+            }
+        },
+        {
+            "id": "recoJTrcqdWNit4fu",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B004T4KKSA",
+                "Has Inventory?": true,
+                "Title": "The Prize: The Epic Quest for Oil, Money & Power",
+                "Summary": "A complete history of OIL.",
+                "Amazon URL": "https://www.amazon.com/Prize-Epic-Quest-Money-Power-ebook/dp/B004T4KKSA/ref=sr_1_1?crid=1D744YRSPI9N3&keywords=the+prize&qid=1690383978&sprefix=the+prize%2Caps%2C111&sr=8-1",
+                "Category": [
+                    "rec6NVXGDn8Gjj1gm"
+                ],
+                "ID": "B004T4KKSA"
+            }
+        },
+        {
+            "id": "recaoiBBfthnMuzfa",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1541647475",
+                "Has Inventory?": true,
+                "Title": "False Alarm",
+                "Summary": "Cutting through climate alarmism.",
+                "Amazon URL": "https://www.amazon.com/False-Alarm-Climate-Change-Trillions/dp/1541647475/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690315056&sr=8-1",
+                "Category": [
+                    "rec6NVXGDn8Gjj1gm"
+                ],
+                "ID": "1541647475"
+            }
+        },
+        {
+            "id": "recVPdSBi7wjae28o",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1591847443",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "The Moral Case for Fossil Fuels",
+                "Summary": "Economic and moral arguments for fossil fuels.",
+                "Amazon URL": "https://www.amazon.com/Moral-Case-Fossil-Fuels/dp/1591847443/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1690314738&sr=8-1",
+                "Category": [
+                    "rec6NVXGDn8Gjj1gm"
+                ],
+                "ID": "1591847443"
+            }
+        },
+        {
+            "id": "recmUrgUMfft0fq6I",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B098M3Y7VC",
+                "Has Inventory?": true,
+                "Title": "Fossil Future: Why Global Human Flourishing Requires More Oil, Coal, and Natural Gas--Not Less",
+                "Summary": "Fossil fuel facts.",
+                "Amazon URL": "https://www.amazon.com/Fossil-Future-Flourishing-Requires-Gas-Not-ebook/dp/B098M3Y7VC/ref=sr_1_2?keywords=the+moral+case+for+fossil+fuels+by+alex+epstein&qid=1690314738&sprefix=moral+case+for+fossi%2Caps%2C3571&sr=8-2",
+                "Category": [
+                    "rec6NVXGDn8Gjj1gm"
+                ],
+                "ID": "B098M3Y7VC"
+            }
+        },
+        {
+            "id": "recya4ll2e2NJvnlF",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0767900391",
+                "Has Inventory?": true,
+                "Title": "What It Means to Be a Libertarian: A Personal Interpretation",
+                "Summary": "An ellucidating alternative to our current political system.",
+                "Amazon URL": "https://www.amazon.com/What-Means-Be-Libertarian-Interpretation/dp/0767900391/ref=sr_1_1?keywords=what+it+means+to+be+a+libertarian&qid=1690315952&sprefix=what+it+means+to+be+a+liber%2Caps%2C652&sr=8-1",
+                "Category": [
+                    "recquAvPC5nQl0la4"
+                ],
+                "ID": "0767900391"
+            }
+        },
+        {
+            "id": "recGQ9KM6mY1Il29B",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0385346530",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "By the People: Rebuilding Liberty Without Permission",
+                "Summary": "Common sense politics.",
+                "Amazon URL": "https://www.amazon.com/People-Rebuilding-Liberty-Without-Permission/dp/0385346530/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690315916&sr=8-3",
+                "Category": [
+                    "recquAvPC5nQl0la4"
+                ],
+                "ID": "0385346530"
+            }
+        },
+        {
+            "id": "rec8WfDTl2oBlNcaf",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1455583685",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "The Accidental Superpower: The Next Generation of American Preeminence and the Coming Global Disorder",
+                "Summary": "The first of four books laying out the specific causes of American greatness.",
+                "Amazon URL": "https://www.amazon.com/Accidental-Superpower-Generation-American-Preeminence/dp/1455583685/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690314935&sr=8-1",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "1455583685"
+            }
+        },
+        {
+            "id": "recODsjH7XVjWYVRE",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "099850520X",
+                "Has Inventory?": true,
+                "Title": "The Absent Superpower: The Shale Revolution and a World Without America",
+                "Summary": "How the shale revolution changed the energy (and economic) map for America.",
+                "Amazon URL": "https://www.amazon.com/Absent-Superpower-Revolution-Without-America/dp/099850520X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "099850520X"
+            }
+        },
+        {
+            "id": "recF95ToRe6JUTNPS",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0062913689",
+                "Has Inventory?": true,
+                "Title": "Disunited Nations: The Scramble for Power in an Ungoverned World",
+                "Summary": "Contrarian foreign policy.",
+                "Amazon URL": "https://www.amazon.com/Disunited-Nations-Scramble-Power-Ungoverned/dp/0062913689/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "0062913689"
+            }
+        },
+        {
+            "id": "recDgm7TOWwUrpymg",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "006323047X",
+                "Has Inventory?": true,
+                "Title": "The End of the World Is Just the Beginning: Mapping the Collapse of Globalization",
+                "Summary": "Contrarian foreign policy, part 2.",
+                "Amazon URL": "https://www.amazon.com/End-World-Just-Beginning-Globalization/dp/006323047X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "006323047X"
+            }
+        },
+        {
+            "id": "rec6mTarRz9rm7p1f",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0262526859",
+                "Title": "Why America Is Not a New Rome",
+                "Summary": "Fact based arguments for American greatness. The rational counter to media and political assumptions of American decline. Bill Gates loves Smil.",
+                "Amazon URL": "https://www.amazon.com/Why-America-Not-Rome-Press/dp/0262526859/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "0262526859"
+            }
+        },
+        {
+            "id": "rectcjviHj1YolIOy",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0063247445",
+                "Has Inventory?": true,
+                "Title": "Never Give an Inch: Fighting for the America I Love",
+                "Summary": "The how and why of American lead anti-American foreign policy.",
+                "Amazon URL": "https://www.amazon.com/Never-Give-Inch-Fighting-America/dp/0063247445",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "0063247445"
+            }
+        },
+        {
+            "id": "recVkJNvRVnctrkrh",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1538167387",
+                "Has Inventory?": true,
+                "Title": "The Myth of American Inequality: How Government Biases Policy Debate",
+                "Summary": "Hint: inequality is actually 1/4th what most claim, according to US Government data.",
+                "Amazon URL": "https://www.amazon.com/Myth-American-Inequality-Government-Biases/dp/1538167387#:~:text=The%20Myth%20of%20American%20Inequality%20refutes%20the%20demagoguery%2C%20and%20convincingly,wider%20than%20ever%2C%20but%20narrower.&text=There%20is%20much%20more%20in,turnover%20in%20America's%20economic%20hierarchy.",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "1538167387"
+            }
+        },
+        {
+            "id": "recMHrnLxyb8ywEid",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "0393249018",
+                "Has Inventory?": true,
+                "Title": "We Wanted Workers: Unraveling the Immigration Narrative",
+                "Summary": "Cutting through the emotions around immigration.",
+                "Amazon URL": "https://www.amazon.com/Wanted-Workers-Unraveling-Immigration-Narrative/dp/0393249018/ref=sr_1_1?keywords=we+wanted+workers&qid=1690314795&sr=8-1",
+                "Category": [
+                    "recahL0GYvCyO2PEr"
+                ],
+                "ID": "0393249018"
+            }
+        },
+        {
+            "id": "recfM5wlSQ41qS7aL",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B09X41VVRL",
+                "Has Inventory?": true,
+                "Best in Category?": true,
+                "Title": "The Russia Conundrum: How the West Fell for Putin's Power Gambit--and How to Fix I",
+                "Summary": "Russia's once richest man tells the story of his rise and fall, and along with it Russia's missed opportunity.",
+                "Amazon URL": "https://www.amazon.com/Russia-Conundrum-Putins-Power-Gambit-ebook/dp/B09X41VVRL/ref=sr_1_2?keywords=khodorkovsky&qid=1690314281&sprefix=khodorkov%2Caps%2C2420&sr=8-2",
+                "Category": [
+                    "rec0B7GUqlLBydQJJ"
+                ],
+                "ID": "B09X41VVRL"
+            }
+        },
+        {
+            "id": "recm20OeHXxiQG4hi",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1610397193",
+                "Has Inventory?": true,
+                "Title": "Winter is Coming",
+                "Summary": "Chess Grandmaster further exposes Russia's rotten core.",
+                "Amazon URL": "https://www.amazon.com/Winter-Coming-Vladimir-Enemies-Stopped/dp/1610397193/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1690314390&sr=8-1",
+                "Category": [
+                    "rec0B7GUqlLBydQJJ"
+                ],
+                "ID": "1610397193"
+            }
+        },
+        {
+            "id": "recMxtUqr0VRHeUS6",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B08ZMSM93S",
+                "Has Inventory?": true,
+                "Title": "The Avoidable War: The Dangers of a Catastrophic Conflict between the US and Xi Jinping's China",
+                "Summary": "The best foreign policy book on China by Australia's former Prime Minister and China scholar.",
+                "Amazon URL": "https://www.amazon.com/Avoidable-War-Dangers-Catastrophic-Conflict-ebook/dp/B08ZMSM93S/ref=sr_1_1?keywords=the+avoidable+war+kevin+rudd&qid=1690382879&sprefix=the+avoidab%2Caps%2C107&sr=8-1",
+                "Category": [
+                    "rec0B7GUqlLBydQJJ"
+                ],
+                "ID": "B08ZMSM93S"
+            }
+        },
+        {
+            "id": "recMHWegj4oS1vIH9",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "B00CO7FMDC",
+                "Has Inventory?": true,
+                "Title": "Dealing with China: An Insider Unmasks the New Economic Superpower",
+                "Summary": "The best book on China by an former Secretary of the Treasury tasked with 'Dealing' with China.",
+                "Amazon URL": "https://www.amazon.com/Dealing-China-Insider-Economic-Superpower-ebook/dp/B00CO7FMDC/ref=sr_1_1?keywords=dealing+with+china+paulson&qid=1690382844&sprefix=dealing+with+china%2Caps%2C105&sr=8-1",
+                "Category": [
+                    "rec0B7GUqlLBydQJJ"
+                ],
+                "ID": "B00CO7FMDC"
+            }
+        },
+        {
+            "id": "recHc1dTwDB0dTJIF",
+            "createdTime": "2023-08-02T19:54:03.000Z",
+            "fields": {
+                "Amazon Product ID": "1250081343",
+                "Has Inventory?": true,
+                "Title": "The Hundred-Year Marathon: China's Secret Strategy to Replace America as the Global Superpower",
+                "Summary": "Great book on Chinese foreign policy aims.",
+                "Amazon URL": "https://www.amazon.com/Hundred-Year-Marathon-Strategy-Replace-Superpower/dp/1250081343/ref=pd_lutyp_d_sim_sccl_2_7/141-6117389-4524729?pd_rd_w=BNlAt&content-id=amzn1.sym.551d3151-75ab-426e-8d2c-7cab24f346bd&pf_rd_p=551d3151-75ab-426e-8d2c-7cab24f346bd&pf_rd_r=HXYFTK0P94EG340KCFG3&pd_rd_wg=eW8ZT&pd_rd_r=e22a5019-9677-449f-af96-2d799f3de705&pd_rd_i=1250081343&psc=1",
+                "Category": [
+                    "rec0B7GUqlLBydQJJ"
+                ],
+                "ID": "1250081343"
+            }
+        }
+    ],
+    "categories": [
+        {
+            "id": "recGCgJwhaUcdySf3",
+            "createdTime": "2023-08-03T06:48:04.000Z",
+            "fields": {
+                "Order": 1,
+                "Name": "Principles",
+                "Books": [
+                    "rece73Uc5Xj588TpY",
+                    "recNzQwmhpluHdMfF",
+                    "recTdVaEw1FuGpu0D",
+                    "rechqQfrpNCyO0cGb",
+                    "recy8kNTWVTCGLn0J",
+                    "recqEZ8ftve1S4mGu"
+                ]
+            }
+        },
+        {
+            "id": "recODmbNlqOMNFBsV",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 2,
+                "Name": "Investing Principles",
+                "Books": [
+                    "recb0ZyrbEJX8IsnP",
+                    "rectTwQceBnoAZs2z",
+                    "recGVwjixtNo3mvA6"
+                ]
+            }
+        },
+        {
+            "id": "rec0TkIJnHlDWmCLr",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 3,
+                "Name": "Productivity",
+                "Books": [
+                    "recJ1ifFrBeYtJbtY",
+                    "rec9JJiLeLEK3v93G",
+                    "recwKMAELYCfWwa2s"
+                ]
+            }
+        },
+        {
+            "id": "recmnt0YztqFUD8Kb",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 4,
+                "Name": "Startup Principles",
+                "Books": [
+                    "recVdelK89HBxajqK",
+                    "recqHAjoXeUH0iCj7",
+                    "recdQM0I09hnH7u4c",
+                    "recZa7ZnSsXnFzBwy",
+                    "recjlaK1zAPu1PZb2",
+                    "recUAdDkWwGOEZmua",
+                    "recso4UXRVmGwVjeX",
+                    "recvIYstIVVE9EgcX",
+                    "recZRQRCbaSzjJRIF",
+                    "recWsVLoSVERsjTn0",
+                    "recGtNiWzsGaQ017X",
+                    "recdM7kfjThh32Z6w"
+                ]
+            }
+        },
+        {
+            "id": "recxGtp3gONwq2Hc7",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 5,
+                "Name": "Startup History",
+                "Books": [
+                    "recpbzhH8AGBIrX4e",
+                    "recbZUVXQJYmoVBgM",
+                    "recUOEth4TmdIyf25",
+                    "rec0x4n4D9GS54OLJ",
+                    "recW7XuXPdMUniEsn",
+                    "recUFbTzpP3YQC4Qj",
+                    "recyWZ0CYOZHrbnUk",
+                    "recXOtWvMu2yWKxrb",
+                    "recFLUEj9xvVpjWyc",
+                    "rech3l1BRJVsLGnSo",
+                    "recrBKe8tJ3dzof4J"
+                ]
+            }
+        },
+        {
+            "id": "rec3GT7BmlJpNeIzL",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 6,
+                "Name": "Business Figures",
+                "Books": [
+                    "rec3kt8nuJmCb6S8f",
+                    "rec639Jj2OQnrSJSu",
+                    "recVifC5WKPF7bnqy",
+                    "recAccTL63d2361bx",
+                    "recWPdeOPklsecXyX",
+                    "rec7xOaZH7CpDLIT5",
+                    "rec0CZD80AkzA3mzr",
+                    "recBAz4A4rLG5c362"
+                ]
+            }
+        },
+        {
+            "id": "rechl9HG4Vz7psjls",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 7,
+                "Name": "Finance and Economic History",
+                "Books": [
+                    "reccMZo9JbQ7T8ZOA",
+                    "recWb4TwqlyJ8liKC",
+                    "recWg5HwXNJWbYbYG",
+                    "recggXVv4bzGnPIJT",
+                    "rec55yynZ5zmUmy3O",
+                    "recW3OXkUWGWLszQQ",
+                    "recJitDsGJsHmL4r6",
+                    "recp36tNPk9klBxlH",
+                    "recVYg5kHYr7hTIxm",
+                    "recv8hgl90Yktx0Sv"
+                ]
+            }
+        },
+        {
+            "id": "rec6NVXGDn8Gjj1gm",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 8,
+                "Name": "Oil",
+                "Books": [
+                    "recoJTrcqdWNit4fu",
+                    "recaoiBBfthnMuzfa",
+                    "recVPdSBi7wjae28o",
+                    "recmUrgUMfft0fq6I"
+                ]
+            }
+        },
+        {
+            "id": "recquAvPC5nQl0la4",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 9,
+                "Name": "Politics",
+                "Books": [
+                    "recya4ll2e2NJvnlF",
+                    "recGQ9KM6mY1Il29B"
+                ]
+            }
+        },
+        {
+            "id": "recahL0GYvCyO2PEr",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 10,
+                "Name": "American Greatness",
+                "Books": [
+                    "rec8WfDTl2oBlNcaf",
+                    "recODsjH7XVjWYVRE",
+                    "recF95ToRe6JUTNPS",
+                    "recDgm7TOWwUrpymg",
+                    "rec6mTarRz9rm7p1f",
+                    "rectcjviHj1YolIOy",
+                    "recVkJNvRVnctrkrh",
+                    "recMHrnLxyb8ywEid"
+                ]
+            }
+        },
+        {
+            "id": "rec0B7GUqlLBydQJJ",
+            "createdTime": "2023-08-03T06:49:04.000Z",
+            "fields": {
+                "Order": 11,
+                "Name": "Globe",
+                "Books": [
+                    "recfM5wlSQ41qS7aL",
+                    "recm20OeHXxiQG4hi",
+                    "recMxtUqr0VRHeUS6",
+                    "recMHWegj4oS1vIH9",
+                    "recHc1dTwDB0dTJIF"
+                ]
+            }
+        }
+    ]
+}
