@@ -1,0 +1,40 @@
+@use "sass:color";
+
+.hero {
+    $bg-color: color.adjust($contrarian-dark-green, $alpha: -0.05);
+
+    position: relative;
+    background-color: $contrarian-dark-green;
+    color: $contrarian-white;
+    overflow: hidden;
+    background-color: $contrarian-black;
+    background-image: url('/images/hero-bg.jpg');
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    $shadow-vertical-length: 6px;
+    $shadow-blur-radius: 10px;
+    $shadow-color: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0px $shadow-vertical-length $shadow-blur-radius 0px $shadow-color;
+    -moz-box-shadow: 0px $shadow-vertical-length $shadow-blur-radius 0px $shadow-color;
+    box-shadow: 0px $shadow-vertical-length $shadow-blur-radius 0px $shadow-color;
+
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $bg-color;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &-text {
+        position: relative;
+        word-wrap: break-word;
+        z-index: 1000;
+    }
+}
