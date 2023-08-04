@@ -17,7 +17,7 @@ export function BookCategoryView({ book }: Props) {
                 />
                 <img src="/images/book-side.svg" className="book-side" alt="" />
             </div>
-            <div className="preface">
+            <div className="preface bg-body-tertiary">
                 <h6>{book.title}</h6>
                 <p>{book.summary}</p>
                 <a
