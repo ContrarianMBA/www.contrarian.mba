@@ -11,6 +11,34 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { useColorMode } from '@/hooks';
 
+// TODO: add Metadata, but cannot be in modules with 'use client'
+// import type { Metadata } from 'next';
+
+// export const metadata: Metadata = {
+//     icons: {
+//         icon: '/innovation.png',
+//         shortcut: '/innovation.png',
+//         apple: '/innovation.png',
+//         other: {
+//             rel: 'apple-touch-icon-precomposed',
+//             url: '/innovation.png',
+//         },
+//     },
+//     robots: {
+//         index: true,
+//         follow: true,
+//         nocache: true,
+//         googleBot: {
+//             index: true,
+//             follow: false,
+//             noimageindex: true,
+//             'max-video-preview': -1,
+//             'max-image-preview': 'large',
+//             'max-snippet': -1,
+//         },
+//     },
+// };
+
 config.autoAddCss = false;
 
 const montserrat = Montserrat({
