@@ -9,8 +9,6 @@
 }
 
 .info {
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 26px;
     margin-top: 10px;
@@ -34,7 +32,6 @@
         display: flex;
         justify-content: space-between;
         font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         z-index: 6;
     }
@@ -104,14 +101,11 @@
         }
 
         .title {
-            //font-family: 'Open Sans', sans-serif;
-            font-family: 'Quicksand', sans-serif;
             font-size: 26px;
             margin-bottom: 10px;
         }
 
         .author {
-            font-family: 'Open Sans', sans-serif;
             font-style: italic;
             margin-bottom: 20px;
         }
@@ -119,10 +113,6 @@
         .icon {
             transform-origin: top;
             transition: transform 0.7s ease-in-out;
-        }
-
-        .body {
-            font-family: 'Quicksand', sans-serif;
         }
 
         .body p:first-child {
