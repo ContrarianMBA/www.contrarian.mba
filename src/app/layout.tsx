@@ -9,6 +9,7 @@ import '@/scss/style.scss';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { useColorMode } from '@/hooks';
 
 config.autoAddCss = false;
 
@@ -30,20 +31,19 @@ type Props = {
 };
 
 export default function RootLayout({ children }: Props) {
-    const [theme, setTheme] = React.useState<'light' | 'dark'>('light');
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
+    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
         <html
             lang="en"
             className={`${montserrat.variable} ${merriweather.variable}`}
-            data-bs-theme={theme}
+            data-bs-theme={colorMode}
         >
             <body className="d-flex flex-column vh-100">
-                <Header theme={theme} toggleTheme={toggleTheme} />
+                <Header
+                    colorMode={colorMode}
+                    toggleColorMode={toggleColorMode}
+                />
                 <main className="flex-grow-1">{children}</main>
                 <Footer />
             </body>

@@ -11,7 +11,6 @@ type Props = {
 };
 export default function CategoryPage({ params: { category } }: Props) {
     const categoryName = getCategoryFromURLParam(category);
-    console.log(categoryName, category);
     const bookIds: string[] = data.lookups.category[categoryName];
     const books: Book[] = bookIds.reduce(
         (filtered: Book[], id: BookID) => [
