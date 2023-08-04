@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 
-import { Montserrat, Merriweather } from 'next/font/google';
+import { Merriweather, Montserrat } from 'next/font/google';
 
+import '@/scss/style.scss';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import '@/scss/style.scss';
 
-import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 
 config.autoAddCss = false;
 

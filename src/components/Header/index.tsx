@@ -1,8 +1,11 @@
 'use client';
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { SITE_NAME } from '@/constants';
-import { ThemeToggleButton } from './ThemeToggleButton';
+import { buildCategoryUrl } from '@/utils';
+import data from '@data/contrarianmba.json';
+import Link from 'next/link';
 import React from 'react';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { ThemeToggleButton } from './ThemeToggleButton';
 
 type Props = {
     theme: 'light' | 'dark';
@@ -33,40 +36,52 @@ export function Header({ theme, toggleTheme }: Props) {
 
     return (
         <header>
+            <>
+                <div className="d-flex justify-content-center align-items-center w-100 mb-2 mt-4">
+                    <a
+                        className="text-decoration-none fw-bolder link-body-emphasis"
+                        href="/"
+                    >
+                        <h1>{SITE_NAME}</h1>
+                    </a>
+                </div>
+                <div className="position-absolute top-0 end-0">
+                    <ThemeToggleButton
+                        theme={theme}
+                        themeToggle={toggleTheme}
+                        mobileNav
+                    />
+                </div>
+            </>
             <Navbar
                 expand="lg"
                 fixed={isFixed ? 'top' : undefined}
-                className="main-navbar bg-body-tertiary"
+                className="main-navbar bg-body-tertiary mb-4"
             >
                 <Container>
-                    <Navbar.Brand href="/">{SITE_NAME}</Navbar.Brand>
                     <Navbar.Toggle aria-controls="main-navbar-nav" />
-                    <Navbar.Offcanvas id="main-navbar-nav" placement="end">
+                    <Navbar.Offcanvas id="main-navbar-nav" placement="start">
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title className="d-flex align-items-center">
-                                {SITE_NAME}
-                                <ThemeToggleButton
-                                    theme={theme}
-                                    themeToggle={toggleTheme}
-                                    mobileNav
-                                />
+                                Categories
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="/">Home</Nav.Link>
-                                {/* <Nav.Link href="/">Another Link</Nav.Link> */}
-                            </Nav>
-                            <Nav className="d-none d-md-flex align-items-center">
-                                <ThemeToggleButton
-                                    theme={theme}
-                                    themeToggle={toggleTheme}
-                                />
+                            <Nav className="justify-content-center flex-grow-1">
+                                {data.categories.map((category) => (
+                                    <Link
+                                        href={buildCategoryUrl(category)}
+                                        className="link-body-emphasis text-decoration-none ms-2 border-start px-2 d-flex justify-content-center align-items-center"
+                                    >
+                                        <small>{category}</small>
+                                    </Link>
+                                ))}
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
+            <hr className="border border-1" />
         </header>
     );
 }

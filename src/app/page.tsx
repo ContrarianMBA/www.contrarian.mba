@@ -1,22 +1,9 @@
 'use client';
-import { Col, Container, Row } from 'react-bootstrap';
-
-import { buildCategoryUrl } from '@/utils';
-import data from '@data/contrarianmba.json';
-import Link from 'next/link';
+import { Container } from 'react-bootstrap';
 
 export default function Home() {
     return (
         <Container>
-            <Row>
-                {data.categories.map((category) => (
-                    <Col key={category}>
-                        <Link href={buildCategoryUrl(category)}>
-                            {category}
-                        </Link>
-                    </Col>
-                ))}
-            </Row>
             <h1>Hello, World!</h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
