@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 
-import { CATEGORIES, SITE_NAME } from '@/constants';
+import { SITE_NAME } from '@/constants';
 import { useColorMode } from '@/hooks';
 
 import { CategoryNav } from './CategoryNav';
@@ -42,8 +42,7 @@ export function Header() {
                     <Navbar.Toggle aria-controls="main-navbar-nav" />
                     <Navbar.Offcanvas id="main-navbar-nav" placement="end">
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title className="d-flex align-items-center">
-                                Books
+                            <Offcanvas.Title className="d-flex align-items-start">
                                 <ThemeToggleButton
                                     colorMode={colorMode}
                                     toggleColorMode={toggleColorMode}
@@ -52,6 +51,10 @@ export function Header() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
+                            <span className="d-lg-none d-md-none d-xl-none fs-4 fw-bold">
+                                Books
+                                <hr />
+                            </span>
                             <Nav className="justify-content-end d-none d-lg-flex flex-grow-1 pe-3">
                                 {/*<Nav.Link as={Link} href="/">
                                     Home
