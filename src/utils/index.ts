@@ -1,1 +1,5 @@
-export * from './lookup';
+export {
+    lookUpBookById,
+    lookUpBookIdsByCategory,
+    resolveCategorySlug,
+} from './lookup';
