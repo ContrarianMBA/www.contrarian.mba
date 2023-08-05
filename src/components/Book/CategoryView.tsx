@@ -1,5 +1,7 @@
-import { Book } from '@data/contrarianmba.json';
 import { Card } from 'react-bootstrap';
+import classNames from 'classnames';
+
+import { Book } from '@/types';
 
 type Props = {
     book: Book;
@@ -7,14 +9,22 @@ type Props = {
 export function BookCategoryView({ book }: Props) {
     const bestClass = book.bestInCategory ? ' best' : '';
 
+    const className = classNames({
+        book: true,
+        best: book.bestInCategory,
+        'mb-3': true,
+    });
+
     return (
-        <div className={`book${bestClass} mb-3`}>
+        <div className={className}>
             <div className="book-cover">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     src={book.amazonImageURL}
                     alt={book.title}
                     className="book-top"
                 />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/book-side.svg" className="book-side" alt="" />
             </div>
             <div className="preface bg-body-tertiary">

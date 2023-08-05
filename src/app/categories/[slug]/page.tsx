@@ -10,6 +10,7 @@ import {
     lookUpBookIdsByCategory,
     resolveCategorySlug,
 } from '@/utils';
+import { Book } from '@/types';
 
 type Props = {
     params: {
@@ -22,19 +23,16 @@ export default function CategoryPage({ params: { slug } }: Props) {
     if (typeof bookIds === 'undefined') {
         notFound();
     }
-    const books: BookType[] = bookIds.reduce(
-        (filtered: BookType[], bookId: BookID) => [
-            ...filtered,
-            lookUpBookById(bookId),
-        ],
-        []
+    const books: Book[] = bookIds.map((bookId: BookID) =>
+        lookUpBookById(bookId)
     );
+
     return (
         <>
             <CategoryTitle category={category} />
             <Container>
                 <Row>
-                    {books.map((book) => (
+                    {books.map((book: Book) => (
                         <Col lg={3} key={book.id}>
                             <BookCategoryView book={book} />
                         </Col>

@@ -9,7 +9,7 @@ export function useColorMode() {
     React.useEffect(() => {
         const savedColorMode =
             (window.localStorage.getItem(
-                COLOR_MODE_STORAGE_KEY,
+                COLOR_MODE_STORAGE_KEY
             ) as ColorMode) || DEFAULT_COLOR_MODE;
         setColorMode(savedColorMode);
         const $html = document.querySelector('html');

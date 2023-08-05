@@ -14,7 +14,7 @@ CATEGORIES.forEach((category) => {
 export const BOOK_IDS_BY_CATEGORY: { [key: string]: BookID[] } =
     DATA.lookups.category;
 
-export const BOOKS_BY_ID: { [key: BookID]: Book[] } = {};
+export const BOOKS_BY_ID: { [key: BookID]: Book } = {};
 Object.keys(DATA.lookups.book_id).forEach((bookId: BookID) => {
     BOOKS_BY_ID[bookId] = new Book(DATA.lookups.book_id[bookId]);
 });

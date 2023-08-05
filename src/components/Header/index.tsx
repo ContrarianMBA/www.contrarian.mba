@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 
 import { CATEGORIES, SITE_NAME } from '@/constants';
-import { buildCategoryUrl } from '@/utils';
 import { useColorMode } from '@/hooks';
 
 import { CategoryNav } from './CategoryNav';
