@@ -7,11 +7,12 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@/scss/style.scss';
 
-import { DEFAULT_COLOR_MODE } from '@/constants';
+import { DEFAULT_COLOR_MODE, SITE_NAME } from '@/constants';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
+    title: SITE_NAME,
     icons: {
         icon: '/innovation.png',
         shortcut: '/innovation.png',
