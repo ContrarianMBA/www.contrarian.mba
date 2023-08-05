@@ -18,4 +18,3 @@ export const BOOKS_BY_ID: { [key: BookID]: Book[] } = {};
 Object.keys(DATA.lookups.book_id).forEach((bookId: BookID) => {
     BOOKS_BY_ID[bookId] = new Book(DATA.lookups.book_id[bookId]);
 });
-console.log(BOOKS_BY_ID);
