@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
 import data, { Book, BookID } from '@data/contrarianmba.json';
 import { BookCategoryView } from '@/components/Book';
-import { CategoriesSideBar } from '@/components/Categories';
 import { getCategoryFromURLParam } from '@/utils';
 
 type Props = {
@@ -25,24 +24,16 @@ export default function CategoryPage({ params: { category } }: Props) {
         [],
     );
     return (
-        <Container className="mt-5 pt-5">
+        <Container className="mt-5">
             <Row>
-                <Col lg={3}>
-                    <h4>Categories</h4>
-                    <CategoriesSideBar />
+                <Col sm={12}>
+                    <h1>{categoryName}</h1>
                 </Col>
-                <Col lg={9}>
-                    <Row>
-                        <Col sm={12}>
-                            <h1>{categoryName}</h1>
-                        </Col>
-                        {books.map((book) => (
-                            <Col lg={4} key={book.id}>
-                                <BookCategoryView book={book} />
-                            </Col>
-                        ))}
-                    </Row>
-                </Col>
+                {books.map((book) => (
+                    <Col lg={3} key={book.id}>
+                        <BookCategoryView book={book} />
+                    </Col>
+                ))}
             </Row>
         </Container>
     );
