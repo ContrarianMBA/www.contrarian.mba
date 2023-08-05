@@ -13,7 +13,7 @@ export default function Home() {
             <Hero />
             {CATEGORIES.map((category) => {
                 return (
-                    <p>
+                    <p key={category.slug}>
                         <Container>
                             <Row>
                                 <Col>
