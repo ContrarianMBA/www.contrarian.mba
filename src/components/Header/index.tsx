@@ -1,9 +1,12 @@
 'use client';
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-import { SITE_NAME } from '@/constants';
-import { ThemeToggleButton } from './ThemeToggleButton';
 import React from 'react';
+import Link from 'next/link';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import data from '@data/contrarianmba.json';
+import { SITE_NAME } from '@/constants';
 import { ColorMode } from '@/types';
+import { buildCategoryUrl } from '@/utils';
+import { ThemeToggleButton } from './ThemeToggleButton';
 
 type Props = {
     colorMode: ColorMode;
@@ -33,19 +36,17 @@ export function Header({ colorMode, toggleColorMode }: Props) {
     }, []);
 
     return (
-        <header>
-            <Navbar
-                expand="lg"
-                fixed={isFixed ? 'top' : undefined}
-                className="main-navbar bg-body-tertiary"
-            >
+        <header className={`main-navbar ${isFixed ? 'fixed-top' : ''}`}>
+            <Navbar expand="lg">
                 <Container>
-                    <Navbar.Brand href="/">{SITE_NAME}</Navbar.Brand>
+                    <Navbar.Brand as={Link} href="/">
+                        {SITE_NAME}
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="main-navbar-nav" />
                     <Navbar.Offcanvas id="main-navbar-nav" placement="end">
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title className="d-flex align-items-center">
-                                {SITE_NAME}
+                                Categories
                                 <ThemeToggleButton
                                     colorMode={colorMode}
                                     toggleColorMode={toggleColorMode}
@@ -54,9 +55,22 @@ export function Header({ colorMode, toggleColorMode }: Props) {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="/">Home</Nav.Link>
+                            <Nav className="justify-content-end d-none d-lg-flex flex-grow-1 pe-3">
+                                <Nav.Link as={Link} href="/">
+                                    Home
+                                </Nav.Link>
                                 {/* <Nav.Link href="/">Another Link</Nav.Link> */}
+                            </Nav>
+                            <Nav className="d-block d-md-none">
+                                {data.categories.map((category) => (
+                                    <Nav.Link
+                                        key={category}
+                                        as={Link}
+                                        href={buildCategoryUrl(category)}
+                                    >
+                                        {category}
+                                    </Nav.Link>
+                                ))}
                             </Nav>
                             <Nav className="d-none d-md-flex align-items-center">
                                 <ThemeToggleButton
@@ -68,6 +82,18 @@ export function Header({ colorMode, toggleColorMode }: Props) {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
+            <Nav className="category-nav d-flex align-items-center justify-content-center">
+                {data.categories.map((category) => (
+                    <Nav.Link
+                        key={category}
+                        as={Link}
+                        href={buildCategoryUrl(category)}
+                        className="link-body-emphasis text-sm"
+                    >
+                        {category}
+                    </Nav.Link>
+                ))}
+            </Nav>
         </header>
     );
 }

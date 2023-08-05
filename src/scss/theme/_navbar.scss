@@ -20,19 +20,28 @@
     }
 }
 
-.main-navbar.fixed-top {
-    -webkit-animation: headerSlideDown 0.95s ease forwards;
-    animation: headerSlideDown 0.95s ease forwards;
-}
+.main-navbar {
 
-.mobile-navbar {
-    display: flex;
-    place-content: flex-end;
-    margin-right: -12px;
-}
+    &.fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1055;
+        -webkit-animation: headerSlideDown 0.95s ease forwards;
+        animation: headerSlideDown 0.95s ease forwards;
 
-.category-labels {
-    text-decoration: none;
-    margin-right: 11px;
-    font-size: 12px;
+        > .navbar {
+            @extend .bg-body-tertiary;
+        }
+        > .category-nav {
+            @at-root [data-bs-theme="light"] & {
+                background-color: $gray-200;
+            }
+
+            @at-root [data-bs-theme="dark"] & {
+                background-color: $gray-700;
+            }
+        }
+    }
 }

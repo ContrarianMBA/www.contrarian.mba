@@ -6,7 +6,7 @@ export function Hero() {
         <section className="hero py-5 mb-5">
             <Container className="my-5 py-5">
                 <Row>
-                    <Col lg={6}>
+                    <Col lg={6} className="mx-auto">
                         <p className="hero-text me-lg-5 pe-lg-5 mb-5 mb-lg-0">
                             An MBA is predominately a networking or career
                             change exercise. Across the board, the curriculum is
