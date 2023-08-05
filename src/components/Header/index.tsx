@@ -82,7 +82,7 @@ export function Header({ colorMode, toggleColorMode }: Props) {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <Nav className="d-flex align-items-center justify-content-center">
+            <Nav className="category-nav d-flex align-items-center justify-content-center">
                 {data.categories.map((category) => (
                     <Nav.Link
                         key={category}
