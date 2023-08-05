@@ -3,15 +3,20 @@ import { Nav } from 'react-bootstrap';
 
 import { CATEGORIES } from '@/constants';
 
-export function CategoryNav() {
+type Props = {
+    navClassName: string;
+    linkClassName: string;
+};
+
+export function CategoryNav({ navClassName, linkClassName }: Props) {
     return (
-        <Nav className="category-nav d-none d-lg-flex align-items-center justify-content-center">
+        <Nav className={navClassName}>
             {CATEGORIES.map((category) => (
                 <Nav.Link
                     key={category.slug}
                     as={Link}
                     href={category.url}
-                    className="link-body-emphasis text-sm"
+                    className={linkClassName}
                 >
                     {category.name}
                 </Nav.Link>

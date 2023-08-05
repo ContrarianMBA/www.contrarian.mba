@@ -2,9 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+
 import { CATEGORIES, SITE_NAME } from '@/constants';
 import { buildCategoryUrl } from '@/utils';
 import { useColorMode } from '@/hooks';
+
 import { CategoryNav } from './CategoryNav';
 import { ThemeToggleButton } from './ThemeToggleButton';
 
@@ -52,22 +54,15 @@ export function Header() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end d-none d-lg-flex flex-grow-1 pe-3">
-                                <Nav.Link as={Link} href="/">
+                                {/*<Nav.Link as={Link} href="/">
                                     Home
-                                </Nav.Link>
+                                    </Nav.Link>*/}
                                 {/* <Nav.Link href="/">Another Link</Nav.Link> */}
                             </Nav>
-                            <Nav className="d-block d-md-none">
-                                {CATEGORIES.map((category) => (
-                                    <Nav.Link
-                                        key={category.slug}
-                                        as={Link}
-                                        href={category.url}
-                                    >
-                                        {category.name}
-                                    </Nav.Link>
-                                ))}
-                            </Nav>
+                            <CategoryNav
+                                navClassName="d-block d-md-none"
+                                linkClassName=""
+                            />
                             <Nav className="d-none d-md-flex align-items-center">
                                 <ThemeToggleButton
                                     colorMode={colorMode}
@@ -78,7 +73,10 @@ export function Header() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <CategoryNav />
+            <CategoryNav
+                navClassName="category-nav d-none d-lg-flex align-items-center justify-content-center"
+                linkClassName="link-body-emphasis text-sm"
+            />
         </header>
     );
 }
