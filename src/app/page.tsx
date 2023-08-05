@@ -11,20 +11,18 @@ export default function Home() {
     return (
         <>
             <Hero />
-            {CATEGORIES.map((category) => {
-                return (
-                    <p key={category.slug}>
-                        <Container>
-                            <Row>
-                                <Col>
-                                    <h3>{category.name}</h3>
-                                </Col>
-                            </Row>
-                        </Container>
-                        <CategoryBooks category={category} />
-                    </p>
-                );
-            })}
+            {CATEGORIES.map((category) => (
+                <section key={category.slug}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h3>{category.name}</h3>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <CategoryBooks category={category} />
+                </section>
+            ))}
         </>
     );
 }
