@@ -7,16 +7,21 @@ export function useColorMode() {
         React.useState<ColorMode>(DEFAULT_COLOR_MODE);
 
     React.useEffect(() => {
-        const savedColorMode = window.localStorage.getItem(
-            COLOR_MODE_STORAGE_KEY,
-        ) as ColorMode;
-        setColorMode(savedColorMode || DEFAULT_COLOR_MODE);
+        const savedColorMode =
+            (window.localStorage.getItem(
+                COLOR_MODE_STORAGE_KEY,
+            ) as ColorMode) || DEFAULT_COLOR_MODE;
+        setColorMode(savedColorMode);
+        const $html = document.querySelector('html');
+        $html!.dataset.bsTheme = savedColorMode;
     }, []);
 
     const toggleColorMode = () => {
         setColorMode(() => {
             const newMode = colorMode === 'light' ? 'dark' : 'light';
             window.localStorage.setItem(COLOR_MODE_STORAGE_KEY, newMode);
+            const $html = document.querySelector('html');
+            $html!.dataset.bsTheme = newMode;
             return newMode;
         });
     };

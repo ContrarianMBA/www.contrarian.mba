@@ -4,17 +4,13 @@ import Link from 'next/link';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import data from '@data/contrarianmba.json';
 import { SITE_NAME } from '@/constants';
-import { ColorMode } from '@/types';
 import { buildCategoryUrl } from '@/utils';
 import { ThemeToggleButton } from './ThemeToggleButton';
+import { useColorMode } from '@/hooks';
 
-type Props = {
-    colorMode: ColorMode;
-    toggleColorMode: () => void;
-};
-
-export function Header({ colorMode, toggleColorMode }: Props) {
+export function Header() {
     const [isFixed, setFixed] = React.useState(false);
+    const { colorMode, toggleColorMode } = useColorMode();
 
     const handleScroll = () => {
         setFixed((state) => {
