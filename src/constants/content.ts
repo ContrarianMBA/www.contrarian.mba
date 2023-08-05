@@ -1,6 +1,6 @@
 import DATA, { BookID, BookType } from '@data/contrarianmba.json';
 
-import { Category } from '@/types';
+import { Book, Category } from '@/types';
 
 export const CATEGORIES: Category[] = DATA.categories.map(
     (category) => new Category(category)
@@ -14,4 +14,8 @@ CATEGORIES.forEach((category) => {
 export const BOOK_IDS_BY_CATEGORY: { [key: string]: BookID[] } =
     DATA.lookups.category;
 
-export const BOOKS_BY_ID: { [key: string]: BookType[] } = DATA.lookups.book_id;
+export const BOOKS_BY_ID: { [key: BookID]: Book[] } = {};
+Object.keys(DATA.lookups.book_id).forEach((bookId: BookID) => {
+    BOOKS_BY_ID[bookId] = new Book(DATA.lookups.book_id[bookId]);
+});
+console.log(BOOKS_BY_ID);

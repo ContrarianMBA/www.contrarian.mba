@@ -9,8 +9,8 @@ declare module '@data/contrarianmba.json' {
         category: CategoryType;
         bestInCategory: boolean;
         amazonProductID: string;
-        amazonProductURL: string;
-        amazonImageURL: string;
+        // amazonProductURL: string;
+        // amazonImageURL: string;
         hasInventory: boolean;
     }
 

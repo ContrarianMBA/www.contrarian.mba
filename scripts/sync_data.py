@@ -10,7 +10,6 @@ from collections import defaultdict
 
 FOLDER = pathlib.Path(__file__).parent.parent / "data"
 
-AMAZON_TRACKING_ID = "contrarianmba-20"
 
 CONTRARIANMBA_RAW_JSON_FILENAME = FOLDER / "contrarianmba_raw.json"
 CONTRARIANMBA_JSON_FILENAME = FOLDER / "contrarianmba.json"
@@ -115,8 +114,6 @@ class Book(AirTableRecord):
             "bestInCategory": self.best_in_category,
             "summary": self.summary,
             "amazonProductID": self.amazon_product_id,
-            "amazonProductURL": self.amazon_product_url,
-            "amazonImageURL": self.amazon_image_url,
             "hasInventory": self.has_inventory,
         }
         return payload
@@ -146,16 +143,6 @@ class Book(AirTableRecord):
     @property
     def has_inventory(self):
         return self.fields.get("Has Inventory?", False)
-
-    @property
-    def amazon_product_url(self):
-        url = f"https://www.amazon.com/dp/{self.amazon_product_id}?tag={AMAZON_TRACKING_ID}&language=en_US"
-        return url
-
-    @property
-    def amazon_image_url(self):
-        url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={self.amazon_product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
-        return url
 
 
 def process_records():
