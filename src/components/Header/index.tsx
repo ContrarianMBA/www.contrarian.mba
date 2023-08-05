@@ -78,7 +78,7 @@ export function Header() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <Nav className="category-nav d-flex align-items-center justify-content-center">
+            <Nav className="category-nav d-none d-lg-flex align-items-center justify-content-center">
                 {data.categories.map((category) => (
                     <Nav.Link
                         key={category}
