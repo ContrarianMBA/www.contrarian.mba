@@ -33,7 +33,7 @@ def main():
           ii. By Category
     """
     # TODO: add a -f flag to force re-downloading if the file already exists
-    # download_contrarianmba_airtable_records()
+    download_contrarianmba_airtable_records()
     process_records()
 
 
