@@ -1,12 +1,12 @@
 declare module '@data/contrarianmba.json' {
     export type BookID = string;
-    export type Category = string;
+    export type CategoryType = string;
 
-    export interface Book {
+    export interface BookType {
         id: BookID;
         title: string;
         summary: string;
-        category: Category;
+        category: CategoryType;
         bestInCategory: boolean;
         amazonProductID: string;
         amazonProductURL: string;
@@ -15,13 +15,13 @@ declare module '@data/contrarianmba.json' {
     }
 
     interface Data {
-        categories: Category[];
+        categories: CategoryType[];
         lookups: {
-            book_id: { [key: BookID]: Book };
-            category: { [key: Category]: BookID[] };
+            book_id: { [key: BookID]: BookType };
+            category: { [key: CategoryType]: BookID[] };
         };
     }
 
-    const data: Data = {};
-    export default data;
+    const DATA: Data = {};
+    export default DATA;
 }

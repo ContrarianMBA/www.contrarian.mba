@@ -1,32 +1,37 @@
 'use client';
 import { notFound } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
-import data, { Book, BookID } from '@data/contrarianmba.json';
+
+import { BookType, BookID } from '@data/contrarianmba.json';
 import { BookCategoryView } from '@/components/Book';
 import { CategoryTitle } from '@/components/CategoryTitle';
-import { getCategoryFromURLParam } from '@/utils';
+import {
+    lookUpBookById,
+    lookUpBookIdsByCategory,
+    resolveCategorySlug,
+} from '@/utils';
 
 type Props = {
     params: {
-        category: string;
+        slug: string;
     };
 };
-export default function CategoryPage({ params: { category } }: Props) {
-    const categoryName = getCategoryFromURLParam(category);
-    const bookIds: string[] = data.lookups.category[categoryName];
+export default function CategoryPage({ params: { slug } }: Props) {
+    const category = resolveCategorySlug(slug);
+    const bookIds: string[] = lookUpBookIdsByCategory(category);
     if (typeof bookIds === 'undefined') {
         notFound();
     }
-    const books: Book[] = bookIds.reduce(
-        (filtered: Book[], id: BookID) => [
+    const books: BookType[] = bookIds.reduce(
+        (filtered: BookType[], bookId: BookID) => [
             ...filtered,
-            data.lookups.book_id[id],
+            lookUpBookById(bookId),
         ],
-        [],
+        []
     );
     return (
         <>
-            <CategoryTitle category={categoryName} />
+            <CategoryTitle category={category} />
             <Container>
                 <Row>
                     {books.map((book) => (

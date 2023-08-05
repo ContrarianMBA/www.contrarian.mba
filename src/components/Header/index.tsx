@@ -2,11 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-import data from '@data/contrarianmba.json';
-import { SITE_NAME } from '@/constants';
+import { CATEGORIES, SITE_NAME } from '@/constants';
 import { buildCategoryUrl } from '@/utils';
-import { ThemeToggleButton } from './ThemeToggleButton';
 import { useColorMode } from '@/hooks';
+import { CategoryNav } from './CategoryNav';
+import { ThemeToggleButton } from './ThemeToggleButton';
 
 export function Header() {
     const [isFixed, setFixed] = React.useState(false);
@@ -42,7 +42,7 @@ export function Header() {
                     <Navbar.Offcanvas id="main-navbar-nav" placement="end">
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title className="d-flex align-items-center">
-                                Categories
+                                Books
                                 <ThemeToggleButton
                                     colorMode={colorMode}
                                     toggleColorMode={toggleColorMode}
@@ -58,13 +58,13 @@ export function Header() {
                                 {/* <Nav.Link href="/">Another Link</Nav.Link> */}
                             </Nav>
                             <Nav className="d-block d-md-none">
-                                {data.categories.map((category) => (
+                                {CATEGORIES.map((category) => (
                                     <Nav.Link
-                                        key={category}
+                                        key={category.slug}
                                         as={Link}
-                                        href={buildCategoryUrl(category)}
+                                        href={category.url}
                                     >
-                                        {category}
+                                        {category.name}
                                     </Nav.Link>
                                 ))}
                             </Nav>
@@ -78,18 +78,7 @@ export function Header() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <Nav className="category-nav d-none d-lg-flex align-items-center justify-content-center">
-                {data.categories.map((category) => (
-                    <Nav.Link
-                        key={category}
-                        as={Link}
-                        href={buildCategoryUrl(category)}
-                        className="link-body-emphasis text-sm"
-                    >
-                        {category}
-                    </Nav.Link>
-                ))}
-            </Nav>
+            <CategoryNav />
         </header>
     );
 }
