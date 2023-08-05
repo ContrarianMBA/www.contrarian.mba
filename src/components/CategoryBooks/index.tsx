@@ -1,9 +1,11 @@
+import { notFound } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
 
-import { Category } from '@/types';
+import { Book, Category } from '@/types';
 import { BookCategoryView } from '@/components/Book';
 
 import { lookUpBookById, lookUpBookIdsByCategory } from '@/utils';
+import { BookID } from '@data/contrarianmba.json';
 
 type Props = {
     category: Category;
