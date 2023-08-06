@@ -1,5 +1,5 @@
-import { ColorMode } from '@/types';
 import { Navbar, Offcanvas } from 'react-bootstrap';
+import { ColorMode } from '@/types';
 import { CategoryNav } from './CategoryNav';
 import { ThemeToggleButton } from './ThemeToggleButton';
 
@@ -11,7 +11,7 @@ type Props = {
 export function MobileNav({ colorMode, toggleColorMode }: Props) {
     return (
         <Navbar.Offcanvas id="main-navbar-nav" placement="end">
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header closeButton className="border-bottom">
                 <Offcanvas.Title className="d-flex flex-column">
                     <ThemeToggleButton
                         colorMode={colorMode}
@@ -21,7 +21,6 @@ export function MobileNav({ colorMode, toggleColorMode }: Props) {
                     <span className="d-lg-none fs-4 fw-bold mt-4">Books</span>
                 </Offcanvas.Title>
             </Offcanvas.Header>
-            <hr />
             <Offcanvas.Body>
                 <CategoryNav
                     navClassName="d-block d-lg-none"

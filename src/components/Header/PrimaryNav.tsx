@@ -1,7 +1,7 @@
-import { SITE_NAME } from '@/constants';
-import { ColorMode } from '@/types';
 import Link from 'next/link';
 import { Nav, Navbar } from 'react-bootstrap';
+import { SITE_NAME } from '@/constants';
+import { ColorMode } from '@/types';
 import { ThemeToggleButton } from './ThemeToggleButton';
 
 type Props = {
