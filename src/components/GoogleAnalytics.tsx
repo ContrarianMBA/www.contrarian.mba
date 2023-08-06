@@ -1,4 +1,4 @@
-import GOOGLE_MEASUREMENT_ID from '@/constants';
+import { GOOGLE_MEASUREMENT_ID } from '@/constants';
 
 import Script from 'next/script';
 
