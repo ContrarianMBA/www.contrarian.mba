@@ -2,14 +2,11 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
 
-import { useColorMode } from '@/hooks';
-
 import { MobileNav } from './MobileNav';
 import { PrimaryNav } from './PrimaryNav';
 
 export function Header() {
     const [isFixed, setFixed] = React.useState(false);
-    const { colorMode, toggleColorMode } = useColorMode();
 
     const handleScroll = () => {
         setFixed((state) => {
