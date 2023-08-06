@@ -6,11 +6,18 @@ import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { SITE_NAME } from '@/constants';
 import { useColorMode } from '@/hooks';
 
+import { ColorMode } from '@/types';
 import { CategoryNav } from './CategoryNav';
 import { ThemeToggleButton } from './ThemeToggleButton';
 
+type Props = {
+    colorMode: ColorMode;
+    toggleColorMode: () => void;
+};
+
 export function Header() {
     const [isFixed, setFixed] = React.useState(false);
+    const { colorMode, toggleColorMode } = useColorMode();
 
     const handleScroll = () => {
         setFixed((state) => {
@@ -35,8 +42,14 @@ export function Header() {
         <header className={`main-navbar ${isFixed ? 'fixed-top' : ''}`}>
             <Navbar expand="lg">
                 <Container>
-                    <DesktopNav />
-                    <MobileNav />
+                    <PrimaryNav
+                        colorMode={colorMode}
+                        toggleColorMode={toggleColorMode}
+                    />
+                    <MobileNav
+                        colorMode={colorMode}
+                        toggleColorMode={toggleColorMode}
+                    />
                 </Container>
             </Navbar>
             <CategoryNav
@@ -47,20 +60,24 @@ export function Header() {
     );
 }
 
-export function DesktopNav() {
+export function PrimaryNav({ colorMode, toggleColorMode }: Props) {
     return (
-        <>
+        <div className="d-flex justify-content-between w-100">
             <Navbar.Brand as={Link} href="/">
                 {SITE_NAME}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="main-navbar-nav" />
-        </>
+            <Nav className="d-none d-lg-flex align-items-center">
+                <ThemeToggleButton
+                    colorMode={colorMode}
+                    toggleColorMode={toggleColorMode}
+                />
+            </Nav>
+        </div>
     );
 }
 
-export function MobileNav() {
-    const { colorMode, toggleColorMode } = useColorMode();
-
+export function MobileNav({ colorMode, toggleColorMode }: Props) {
     return (
         <Navbar.Offcanvas id="main-navbar-nav" placement="end">
             <Offcanvas.Header closeButton>
@@ -73,26 +90,14 @@ export function MobileNav() {
                 </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-                <span className="d-lg-none d-md-none d-xl-none fs-4 fw-bold">
+                <span className="d-lg-none d-lg-none d-xl-none fs-4 fw-bold">
                     Books
                     <hr />
                 </span>
-                <Nav className="justify-content-end d-none d-lg-flex flex-grow-1 pe-3">
-                    {/*<Nav.Link as={Link} href="/">
-                                    Home
-                                    </Nav.Link>*/}
-                    {/* <Nav.Link href="/">Another Link</Nav.Link> */}
-                </Nav>
                 <CategoryNav
-                    navClassName="d-block d-md-none"
+                    navClassName="d-block d-lg-none"
                     linkClassName=""
                 />
-                <Nav className="d-none d-md-flex align-items-center">
-                    <ThemeToggleButton
-                        colorMode={colorMode}
-                        toggleColorMode={toggleColorMode}
-                    />
-                </Nav>
             </Offcanvas.Body>
         </Navbar.Offcanvas>
     );
