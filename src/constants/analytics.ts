@@ -1,0 +1,1 @@
+export const GOOGLE_MEASUREMENT_ID = 'G-KHD3B8Q5NV';
