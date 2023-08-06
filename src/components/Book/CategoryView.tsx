@@ -1,4 +1,3 @@
-import { Card } from 'react-bootstrap';
 import classNames from 'classnames';
 
 import { Book } from '@/types';
@@ -32,7 +31,7 @@ export function BookCategoryView({ book }: Props) {
                 <p>{book.summary}</p>
                 <a
                     href={book.amazonProductURL}
-                    className="btn btn-primary stretched-link"
+                    className="btn btn-primary"
                     target="_blank"
                 >
                     BUY
