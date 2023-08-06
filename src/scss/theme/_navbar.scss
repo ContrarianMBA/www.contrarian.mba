@@ -21,7 +21,6 @@
 }
 
 .main-navbar {
-
     &.fixed-top {
         position: fixed;
         top: 0;
@@ -35,13 +34,27 @@
             @extend .bg-body-tertiary;
         }
         > .category-nav {
-            @at-root [data-bs-theme="light"] & {
+            @at-root [data-bs-theme='light'] & {
                 background-color: $gray-200;
             }
 
-            @at-root [data-bs-theme="dark"] & {
+            @at-root [data-bs-theme='dark'] & {
                 background-color: $gray-700;
             }
         }
     }
+}
+
+.btn-close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.offcanvas-body {
+    margin-top: -25px;
+}
+
+.offcanvas-header {
+    margin-bottom: -15px;
 }
