@@ -1,19 +1,12 @@
 'use client';
-import Link from 'next/link';
 import React from 'react';
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 
-import { SITE_NAME } from '@/constants';
 import { useColorMode } from '@/hooks';
 
-import { ColorMode } from '@/types';
 import { CategoryNav } from './CategoryNav';
-import { ThemeToggleButton } from './ThemeToggleButton';
-
-type Props = {
-    colorMode: ColorMode;
-    toggleColorMode: () => void;
-};
+import { MobileNav } from './MobileNav';
+import { PrimaryNav } from './PrimaryNav';
 
 export function Header() {
     const [isFixed, setFixed] = React.useState(false);
@@ -57,48 +50,5 @@ export function Header() {
                 linkClassName="link-body-emphasis text-sm"
             />
         </header>
-    );
-}
-
-export function PrimaryNav({ colorMode, toggleColorMode }: Props) {
-    return (
-        <div className="d-flex justify-content-between w-100">
-            <Navbar.Brand as={Link} href="/">
-                {SITE_NAME}
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="main-navbar-nav" />
-            <Nav className="d-none d-lg-flex align-items-center">
-                <ThemeToggleButton
-                    colorMode={colorMode}
-                    toggleColorMode={toggleColorMode}
-                />
-            </Nav>
-        </div>
-    );
-}
-
-export function MobileNav({ colorMode, toggleColorMode }: Props) {
-    return (
-        <Navbar.Offcanvas id="main-navbar-nav" placement="end">
-            <Offcanvas.Header closeButton>
-                <Offcanvas.Title className="d-flex align-items-start">
-                    <ThemeToggleButton
-                        colorMode={colorMode}
-                        toggleColorMode={toggleColorMode}
-                        mobileNav
-                    />
-                </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-                <span className="d-lg-none d-lg-none d-xl-none fs-4 fw-bold">
-                    Books
-                    <hr />
-                </span>
-                <CategoryNav
-                    navClassName="d-block d-lg-none"
-                    linkClassName=""
-                />
-            </Offcanvas.Body>
-        </Navbar.Offcanvas>
     );
 }
