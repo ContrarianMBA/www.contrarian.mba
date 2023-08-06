@@ -1,17 +1,12 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 
-import { CATEGORIES, SITE_NAME } from '@/constants';
-import { useColorMode } from '@/hooks';
-
-import { CategoryNav } from './CategoryNav';
-import { ThemeToggleButton } from './ThemeToggleButton';
+import { MobileNav } from './MobileNav';
+import { PrimaryNav } from './PrimaryNav';
 
 export function Header() {
     const [isFixed, setFixed] = React.useState(false);
-    const { colorMode, toggleColorMode } = useColorMode();
 
     const handleScroll = () => {
         setFixed((state) => {
@@ -35,47 +30,11 @@ export function Header() {
     return (
         <header className={`main-navbar ${isFixed ? 'fixed-top' : ''}`}>
             <Navbar expand="lg">
-                <Container>
-                    <Navbar.Brand as={Link} href="/">
-                        {SITE_NAME}
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="main-navbar-nav" />
-                    <Navbar.Offcanvas id="main-navbar-nav" placement="end">
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title className="d-flex align-items-center">
-                                Books
-                                <ThemeToggleButton
-                                    colorMode={colorMode}
-                                    toggleColorMode={toggleColorMode}
-                                    mobileNav
-                                />
-                            </Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            <Nav className="justify-content-end d-none d-lg-flex flex-grow-1 pe-3">
-                                {/*<Nav.Link as={Link} href="/">
-                                    Home
-                                    </Nav.Link>*/}
-                                {/* <Nav.Link href="/">Another Link</Nav.Link> */}
-                            </Nav>
-                            <CategoryNav
-                                navClassName="d-block d-md-none"
-                                linkClassName=""
-                            />
-                            <Nav className="d-none d-md-flex align-items-center">
-                                <ThemeToggleButton
-                                    colorMode={colorMode}
-                                    toggleColorMode={toggleColorMode}
-                                />
-                            </Nav>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
+                <Container className="d-flex flex-column">
+                    <PrimaryNav />
+                    <MobileNav />
                 </Container>
             </Navbar>
-            <CategoryNav
-                navClassName="category-nav d-none d-lg-flex align-items-center justify-content-center"
-                linkClassName="link-body-emphasis text-sm"
-            />
         </header>
     );
 }
