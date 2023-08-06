@@ -1,4 +1,3 @@
-'use client';
 import { notFound } from 'next/navigation';
 import { CategoryTitle } from '@/components/CategoryTitle';
 import { CategoryBooks } from '@/components/CategoryBooks';
@@ -25,7 +24,7 @@ export default function CategoryPage({ params: { slug } }: Props) {
     );
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
     const paths = CATEGORIES.map(({ slug }) => ({ slug }));
     return paths;
 }

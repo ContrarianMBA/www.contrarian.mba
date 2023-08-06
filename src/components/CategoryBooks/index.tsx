@@ -1,3 +1,4 @@
+'use client';
 import { notFound } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -13,9 +14,6 @@ type Props = {
 
 export function CategoryBooks({ category }: Props) {
     const bookIds: string[] = lookUpBookIdsByCategory(category);
-    if (typeof bookIds === 'undefined') {
-        notFound();
-    }
     const books: Book[] = bookIds.map((bookId: BookID) =>
         lookUpBookById(bookId)
     );
