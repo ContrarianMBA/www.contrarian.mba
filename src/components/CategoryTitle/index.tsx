@@ -1,3 +1,4 @@
+'use client';
 import { Container } from 'react-bootstrap';
 
 import { Category } from '@/types';
