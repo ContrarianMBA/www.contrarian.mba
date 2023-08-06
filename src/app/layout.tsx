@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { Montserrat, Merriweather } from 'next/font/google';
 import type { Metadata } from 'next';
+import { Montserrat, Merriweather } from 'next/font/google';
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@/scss/style.scss';
 
 import { DEFAULT_COLOR_MODE, SITE_NAME } from '@/constants';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: Props) {
             className={`${montserrat.variable} ${merriweather.variable}`}
             data-bs-theme={DEFAULT_COLOR_MODE}
         >
+            <GoogleAnalytics />
             <body className="d-flex flex-column vh-100">
                 <Header />
                 <main className="flex-grow-1">{children}</main>
