@@ -1,4 +1,4 @@
-import { QUOTE, SITE_NAME, SITE_URL } from '@/constants';
+import { SHARE_QUOTE, SITE_NAME, SITE_URL } from '@/constants';
 import classNames from 'classnames';
 import { Col, Container, Row } from 'react-bootstrap';
 import {
@@ -32,21 +32,21 @@ export function Hero() {
                         <div className="hero-share-buttons">
                             <TwitterShareButton
                                 className={className}
-                                title={QUOTE}
+                                title={SHARE_QUOTE}
                                 url={SITE_URL}
                             >
                                 <TwitterIcon size={32} round />
                             </TwitterShareButton>
                             <FacebookShareButton
                                 className={className}
-                                title={QUOTE}
+                                title={SHARE_QUOTE}
                                 url={SITE_URL}
                             >
                                 <FacebookIcon size={32} round />
                             </FacebookShareButton>
                             <LinkedinShareButton
                                 className={className}
-                                title={QUOTE}
+                                title={SHARE_QUOTE}
                                 url={SITE_URL}
                             >
                                 <LinkedinIcon size={32} round />
