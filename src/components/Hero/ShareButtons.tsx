@@ -16,7 +16,7 @@ import {
     TwitterShareButton,
 } from 'react-share';
 
-export function HeroShareButtons() {
+export function ShareButtons() {
     const className = classNames('text-primary fs-5 ms-2');
 
     return (

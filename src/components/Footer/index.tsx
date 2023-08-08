@@ -3,15 +3,15 @@
 import React from 'react';
 
 import { FACEBOOK_URL, INSTAGRAM_URL, TWITTER_URL } from '@/constants/social';
-import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import {
+    faFacebook,
+    faInstagram,
+    faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-config.autoAddCss = false;
-library.add(fas, fab);
-
 import { SITE_NAME } from '@/constants';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 function Component() {
     const copyrightYear = new Date().getFullYear();
@@ -34,21 +34,21 @@ function Component() {
                     href={FACEBOOK_URL}
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'facebook']} />
+                    <FontAwesomeIcon icon={faFacebook as IconProp} />
                 </a>
                 <a
                     className="text-primary ms-3 fs-5"
                     href={TWITTER_URL}
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'twitter']} />
+                    <FontAwesomeIcon icon={faTwitter as IconProp} />
                 </a>
                 <a
                     className="text-primary ms-3 fs-5"
                     href={INSTAGRAM_URL}
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'instagram']} />
+                    <FontAwesomeIcon icon={faInstagram as IconProp} />
                 </a>
             </div>
         </footer>

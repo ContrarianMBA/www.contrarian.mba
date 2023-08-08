@@ -1,7 +1,6 @@
-import classNames from 'classnames';
 import { Col, Container, Row } from 'react-bootstrap';
 import { HERO_BLURB } from '@/constants';
-import { HeroShareButtons } from '@/components/HeroShareButtons';
+import { ShareButtons } from './ShareButtons';
 
 export function Hero() {
     return (
@@ -14,7 +13,7 @@ export function Hero() {
                             dangerouslySetInnerHTML={{ __html: HERO_BLURB }}
                         ></p>
 
-                        <HeroShareButtons />
+                        <ShareButtons />
                     </Col>
                 </Row>
             </Container>
