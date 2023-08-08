@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { FACEBOOK_URL, INSTAGRAM_URL, TWITTER_URL } from '@/constants/social';
@@ -26,23 +28,23 @@ function Component() {
             <p>
                 Copyright &copy; {copyrightYear} {SITE_NAME}
             </p>
-            <div className="d-flex">
+            <div className="d-flex align-items-center">
                 <a
-                    className="text-dark fs-5"
+                    className="text-primary ms-3 fs-5"
                     href={FACEBOOK_URL}
                     target="_blank"
                 >
                     <FontAwesomeIcon icon={['fab', 'facebook']} />
                 </a>
                 <a
-                    className="text-dark ms-3 fs-5"
+                    className="text-primary ms-3 fs-5"
                     href={TWITTER_URL}
                     target="_blank"
                 >
                     <FontAwesomeIcon icon={['fab', 'twitter']} />
                 </a>
                 <a
-                    className="text-dark ms-3 fs-5"
+                    className="text-primary ms-3 fs-5"
                     href={INSTAGRAM_URL}
                     target="_blank"
                 >

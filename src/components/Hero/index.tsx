@@ -1,7 +1,18 @@
+import { QUOTE, SITE_NAME, SITE_URL } from '@/constants';
+import classNames from 'classnames';
 import { Col, Container, Row } from 'react-bootstrap';
-import { SITE_NAME } from '@/constants';
+import {
+    FacebookIcon,
+    FacebookShareButton,
+    LinkedinIcon,
+    LinkedinShareButton,
+    TwitterIcon,
+    TwitterShareButton,
+} from 'react-share';
 
 export function Hero() {
+    const className = classNames('text-primary fs-5 ms-2');
+
     return (
         <section className="hero py-5 mb-5">
             <Container className="my-5 py-5">
@@ -18,6 +29,29 @@ export function Hero() {
                             economy, finance, political ramifications, and more
                             through books by or about practitioners.
                         </p>
+                        <div className="hero-share-buttons">
+                            <TwitterShareButton
+                                className={className}
+                                title={QUOTE}
+                                url={SITE_URL}
+                            >
+                                <TwitterIcon size={32} round />
+                            </TwitterShareButton>
+                            <FacebookShareButton
+                                className={className}
+                                title={QUOTE}
+                                url={SITE_URL}
+                            >
+                                <FacebookIcon size={32} round />
+                            </FacebookShareButton>
+                            <LinkedinShareButton
+                                className={className}
+                                title={QUOTE}
+                                url={SITE_URL}
+                            >
+                                <LinkedinIcon size={32} round />
+                            </LinkedinShareButton>
+                        </div>
                     </Col>
                 </Row>
             </Container>
