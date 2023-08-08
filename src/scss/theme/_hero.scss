@@ -37,4 +37,11 @@
         word-wrap: break-word;
         z-index: 1000;
     }
+
+    &-share-buttons {
+        z-index: 1001;
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+    }
 }
