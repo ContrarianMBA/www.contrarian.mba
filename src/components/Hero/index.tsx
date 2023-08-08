@@ -1,9 +1,15 @@
-import { SHARE_QUOTE, SITE_NAME, SITE_URL } from '@/constants';
+import { SITE_NAME, SITE_URL } from '@/constants';
+import {
+    FACEBOOK_SHARE_QUOTE,
+    LINKEDIN_SHARE_QUOTE,
+    TWITTER_SHARE_QUOTE,
+} from '@/constants/social';
 import classNames from 'classnames';
 import { Col, Container, Row } from 'react-bootstrap';
 import {
     FacebookIcon,
     FacebookShareButton,
+    FacebookShareCount,
     LinkedinIcon,
     LinkedinShareButton,
     TwitterIcon,
@@ -32,25 +38,26 @@ export function Hero() {
                         <div className="hero-share-buttons">
                             <TwitterShareButton
                                 className={className}
-                                title={SHARE_QUOTE}
+                                title={TWITTER_SHARE_QUOTE}
                                 url={SITE_URL}
                             >
                                 <TwitterIcon size={32} round />
                             </TwitterShareButton>
-                            <FacebookShareButton
-                                className={className}
-                                title={SHARE_QUOTE}
-                                url={SITE_URL}
-                            >
-                                <FacebookIcon size={32} round />
-                            </FacebookShareButton>
                             <LinkedinShareButton
                                 className={className}
-                                title={SHARE_QUOTE}
+                                summary={LINKEDIN_SHARE_QUOTE}
                                 url={SITE_URL}
                             >
                                 <LinkedinIcon size={32} round />
                             </LinkedinShareButton>
+                            <FacebookShareButton
+                                className={className}
+                                quote={FACEBOOK_SHARE_QUOTE}
+                                url={SITE_URL}
+                            >
+                                <FacebookIcon size={32} round></FacebookIcon>
+                            </FacebookShareButton>
+                            <FacebookShareCount url={SITE_URL} />
                         </div>
                     </Col>
                 </Row>
