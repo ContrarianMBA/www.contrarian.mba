@@ -1,64 +1,20 @@
-import { SITE_NAME, SITE_URL } from '@/constants';
-import {
-    FACEBOOK_SHARE_QUOTE,
-    LINKEDIN_SHARE_QUOTE,
-    TWITTER_SHARE_QUOTE,
-} from '@/constants/social';
 import classNames from 'classnames';
 import { Col, Container, Row } from 'react-bootstrap';
-import {
-    FacebookIcon,
-    FacebookShareButton,
-    FacebookShareCount,
-    LinkedinIcon,
-    LinkedinShareButton,
-    TwitterIcon,
-    TwitterShareButton,
-} from 'react-share';
+import { HERO_BLURB } from '@/constants';
+import { HeroShareButtons } from '@/components/HeroShareButtons';
 
 export function Hero() {
-    const className = classNames('text-primary fs-5 ms-2');
-
     return (
         <section className="hero py-5 mb-5">
             <Container className="my-5 py-5">
                 <Row>
                     <Col lg={6} className="mx-auto">
-                        <p className="hero-text me-lg-5 pe-lg-5 mb-5 mb-lg-0">
-                            An MBA is predominately a networking or career
-                            change exercise. Across the board, the curriculum is
-                            weak and outdated, which follows from most of
-                            academia (except cutting-edge criticism). The
-                            following{' '}
-                            <span className="fw-bold h4">{SITE_NAME}</span>{' '}
-                            curriculum introduces business principles, the
-                            economy, finance, political ramifications, and more
-                            through books by or about practitioners.
-                        </p>
-                        <div className="hero-share-buttons">
-                            <TwitterShareButton
-                                className={className}
-                                title={TWITTER_SHARE_QUOTE}
-                                url={SITE_URL}
-                            >
-                                <TwitterIcon size={32} round />
-                            </TwitterShareButton>
-                            <LinkedinShareButton
-                                className={className}
-                                summary={LINKEDIN_SHARE_QUOTE}
-                                url={SITE_URL}
-                            >
-                                <LinkedinIcon size={32} round />
-                            </LinkedinShareButton>
-                            <FacebookShareButton
-                                className={className}
-                                quote={FACEBOOK_SHARE_QUOTE}
-                                url={SITE_URL}
-                            >
-                                <FacebookIcon size={32} round></FacebookIcon>
-                            </FacebookShareButton>
-                            <FacebookShareCount url={SITE_URL} />
-                        </div>
+                        <p
+                            className="hero-text me-lg-5 pe-lg-5 mb-5 mb-lg-0"
+                            dangerouslySetInnerHTML={{ __html: HERO_BLURB }}
+                        ></p>
+
+                        <HeroShareButtons />
                     </Col>
                 </Row>
             </Container>
