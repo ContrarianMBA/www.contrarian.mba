@@ -9,7 +9,8 @@ export function CopyrightSection() {
         <div className="text-center">
             Copyright &copy; {copyrightYear} {SITE_NAME}
             <br />
-            <Link href="/credits">Credits</Link>
+            <Link href="/credits">Credits</Link> &middot;{' '}
+            <Link href="/jobs">Jobs</Link>
         </div>
     );
 }

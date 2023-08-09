@@ -7,6 +7,13 @@ import { CATEGORIES } from '@/constants';
 export default function Credits() {
     return (
         <Container>
+            <h3>Content</h3>
+            <ul>
+                <li>
+                    Books curated by the CEO of a top YC company, a true
+                    contrarian.
+                </li>
+            </ul>
             <h3>Graphics</h3>
             <ul>
                 <li>
