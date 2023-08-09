@@ -1,3 +1,5 @@
+import React from 'react';
+
 import classNames from 'classnames';
 
 import { Book } from '@/types';
@@ -7,16 +9,26 @@ type Props = {
 };
 export function BookCategoryView({ book }: Props) {
     const bestClass = book.bestInCategory ? ' best' : '';
+    const [active, setActive] = React.useState(false);
 
-    const className = classNames({
+    const booksClassName = classNames({
         book: true,
         best: book.bestInCategory,
         'mb-3': true,
     });
 
+    const bookCoverClassName = classNames('book-cover', active && 'active');
+
+    const prefaceClassName = classNames(
+        'preface bg-body-tertiary',
+        active && 'active'
+    );
+
+    const toogleBook = () => setActive(!active);
+
     return (
-        <div className={className}>
-            <div className="book-cover">
+        <div onClick={toogleBook} className={booksClassName}>
+            <div className={bookCoverClassName}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     src={book.amazonImageURL}
@@ -26,7 +38,7 @@ export function BookCategoryView({ book }: Props) {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/book-side.svg" className="book-side" alt="" />
             </div>
-            <div className="preface bg-body-tertiary">
+            <div className={prefaceClassName}>
                 <h6>{book.title}</h6>
                 <p>{book.summary}</p>
                 <a

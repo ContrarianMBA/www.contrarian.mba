@@ -59,14 +59,29 @@
         }
     }
 
-    &:hover .book-cover {
-        transform: rotateX(75deg) translateZ(3px) scale(0.75);
+    @include media-breakpoint-down(md) {
+        .preface.active {
+            transform: translateY(-216px);
+            p, a.btn {
+                opacity: 1;
+            }
+        }
+
+        .book-cover.active {
+            transform: rotateX(75deg) translateZ(3px) scale(0.75);
+        }
     }
 
-    &:hover .preface {
-        transform: translateY(-216px);
-        p, a.btn {
-            opacity: 1;
+    @include media-breakpoint-up(md) {
+        &:hover .book-cover {
+            transform: rotateX(75deg) translateZ(3px) scale(0.75);
+        }
+
+        &:hover .preface {
+            transform: translateY(-216px);
+            p, a.btn {
+                opacity: 1;
+            }
         }
     }
 }
