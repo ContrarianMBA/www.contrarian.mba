@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const dynamicPaths = [
         ...CATEGORIES.map((category) => {
-            return category.url;
+            return category.path;
         }),
     ];
 
