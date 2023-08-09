@@ -24,9 +24,7 @@ export function BookCategoryView({ book }: Props) {
         active && 'active'
     );
 
-    const toogleBook = () => {
-        setActive(!active);
-    };
+    const toogleBook = () => setActive(!active);
 
     return (
         <div onClick={toogleBook} className={booksClassName}>
