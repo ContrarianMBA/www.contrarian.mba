@@ -33,6 +33,12 @@
         z-index: 4;
     }
 
+    @media screen and (max-width: 767px) {
+        .book-cover-mobile {
+            transform: rotateX(75deg) translateZ(3px) scale(0.75);
+        }
+    }
+
     .book-top {
         position: absolute;
         top: 50px;
@@ -59,14 +65,22 @@
         }
     }
 
-    &:hover .book-cover {
-        transform: rotateX(75deg) translateZ(3px) scale(0.75);
+    @media screen and (max-width: 767px) {
+        .preface-mobile {
+            transform: translateY(-216px);
+        }
     }
 
-    &:hover .preface {
-        transform: translateY(-216px);
-        p, a.btn {
-            opacity: 1;
+    @media screen and (min-width: 768px) {
+        &:hover .book-cover {
+            transform: rotateX(75deg) translateZ(3px) scale(0.75);
+        }
+
+        &:hover .preface {
+            transform: translateY(-216px);
+            p, a.btn {
+                opacity: 1;
+            }
         }
     }
 }
