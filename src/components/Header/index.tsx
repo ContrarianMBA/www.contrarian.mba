@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
 
+import { HEADER_SCROLL_THRESHOLD } from '@/constants';
 import { MobileNav } from './MobileNav';
 import { PrimaryNav } from './PrimaryNav';
 
@@ -10,9 +11,9 @@ export function Header() {
 
     const handleScroll = () => {
         setFixed((state) => {
-            if (!state && window.scrollY > 350) {
+            if (!state && window.scrollY > HEADER_SCROLL_THRESHOLD) {
                 return true;
-            } else if (state && window.scrollY <= 350) {
+            } else if (state && window.scrollY <= HEADER_SCROLL_THRESHOLD) {
                 return false;
             } else {
                 return state;

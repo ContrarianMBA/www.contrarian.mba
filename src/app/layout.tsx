@@ -67,7 +67,7 @@ export default function RootLayout({ children }: Props) {
             <GoogleAnalytics />
             <body className="d-flex flex-column vh-100">
                 <Header />
-                <main className="flex-grow-1">{children}</main>
+                <main className="flex-grow-1 mb-5">{children}</main>
                 <Footer />
             </body>
         </html>
