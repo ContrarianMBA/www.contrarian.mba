@@ -17,14 +17,11 @@ export function BookCategoryView({ book }: Props) {
         'mb-3': true,
     });
 
-    const bookCoverClassName = classNames(
-        'book-cover',
-        active ? 'book-cover-mobile' : ''
-    );
+    const bookCoverClassName = classNames('book-cover', active && 'active');
 
     const prefaceClassName = classNames(
         'preface bg-body-tertiary',
-        active ? 'preface-mobile' : ''
+        active && 'active'
     );
 
     const toogleBook = () => {
