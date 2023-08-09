@@ -25,7 +25,7 @@ export function SocialLinks() {
                 <FontAwesomeIcon icon={faTwitter as IconProp} />
             </a>
             <a
-                className="text-primary ms-3 fs-5"
+                className="text-body ms-3 fs-5"
                 href={INSTAGRAM_URL}
                 target="_blank"
             >
