@@ -31,7 +31,7 @@ export function BookCategoryView({ book }: Props) {
             <div className={bookCoverClassName}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                    src={book.amazonImageURL}
+                    src={book.imageURL}
                     alt={book.title}
                     className="book-top"
                 />
