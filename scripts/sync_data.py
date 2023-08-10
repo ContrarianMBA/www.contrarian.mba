@@ -74,7 +74,7 @@ def download_product_image(product_id, force=False):
         urllib.request.urlretrieve(image_url, image_path)
     else:
         # optimization: don’t re-download images that already exist in filesystem
-        # pass
+        pass
 
 
 def download_product_images():
