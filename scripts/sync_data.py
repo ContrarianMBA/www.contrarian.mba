@@ -1,4 +1,5 @@
 # Python Standard Library Imports
+import os
 import urllib.request
 import json
 import pathlib
@@ -37,9 +38,9 @@ def main():
           ii. By Category
     """
     # TODO: add a -f flag to force re-downloading if the file already exists
-    download_contrarianmba_airtable_records()
-    process_records()
-    download_image_urls()
+    # download_contrarianmba_airtable_records()
+    # process_records()
+    download_product_images()
 
 
 def download_contrarianmba_airtable_records():
@@ -64,15 +65,25 @@ def download_contrarianmba_airtable_records():
         f.write("\n")
 
 
-def download_image_urls():
-    with open(CONTRARIANMBA_RAW_JSON_FILENAME, "r") as f:
+def download_product_images():
+    with open(CONTRARIANMBA_JSON_FILENAME, "r") as f:
         data = json.loads(f.read())
-        books = [Book.from_raw(record) for record in data["books"]]
+        books = [book for book in data["lookups"]["book_id"].values()]
 
     for book in books:
-        image_url = book.amazon_image_url
-        image_path = f"{PUBLIC_FOLDER}/images/products/{book.amazon_product_id}.jpg"
-        urllib.request.urlretrieve(image_url, image_path)
+        image_url = build_amazon_image_url(book["amazonProductID"])
+        image_path = f"{PUBLIC_FOLDER}/images/products/{book['amazonProductID']}.jpg"
+
+        if os.path.exists(image_path):
+            print(f"Book Image {image_path} already exists.")
+        else:
+            urllib.request.urlretrieve(image_url, image_path)
+            print(f"Book Image {book['amazonProductID']}.jpg added")
+
+
+def build_amazon_image_url(product_id):
+    url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
+    return url
 
 
 class AirTableRecord:
@@ -130,7 +141,6 @@ class Book(AirTableRecord):
             "bestInCategory": self.best_in_category,
             "summary": self.summary,
             "amazonProductID": self.amazon_product_id,
-            "amazonImageURL": self.amazon_image_url,
             "hasInventory": self.has_inventory,
         }
         return payload
@@ -158,13 +168,13 @@ class Book(AirTableRecord):
         return self.fields["Amazon Product ID"]
 
     @property
-    def has_inventory(self):
-        return self.fields.get("Has Inventory?", False)
-
-    @property
     def amazon_image_url(self):
         url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={self.amazon_product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
         return url
+
+    @property
+    def has_inventory(self):
+        return self.fields.get("Has Inventory?", False)
 
 
 def process_records():

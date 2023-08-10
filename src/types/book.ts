@@ -17,6 +17,6 @@ export class Book implements BookType {
 
         this.amazonProductURL = `https://www.amazon.com/dp/${this.amazonProductID}?tag=${AMAZON_TRACKING_ID}&language=en_US`;
 
-        this.amazonImageURL = `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${this.amazonProductID}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=${AMAZON_TRACKING_ID}`;
+        this.amazonImageURL = `/images/products/${this.amazonProductID}.jpg`;
     }
 }
