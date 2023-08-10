@@ -1,4 +1,5 @@
 # Python Standard Library Imports
+import urllib.request
 import json
 import pathlib
 import sys
@@ -9,6 +10,9 @@ from collections import defaultdict
 
 
 FOLDER = pathlib.Path(__file__).parent.parent / "data"
+PUBLIC_FOLDER = pathlib.Path(__file__).parent.parent / "public"
+
+AMAZON_TRACKING_ID = "contrarianmba-20"
 
 
 CONTRARIANMBA_RAW_JSON_FILENAME = FOLDER / "contrarianmba_raw.json"
@@ -35,6 +39,7 @@ def main():
     # TODO: add a -f flag to force re-downloading if the file already exists
     download_contrarianmba_airtable_records()
     process_records()
+    download_image_urls()
 
 
 def download_contrarianmba_airtable_records():
@@ -57,6 +62,17 @@ def download_contrarianmba_airtable_records():
     with open(CONTRARIANMBA_RAW_JSON_FILENAME, "w") as f:
         f.write(json.dumps(data, indent=4))
         f.write("\n")
+
+
+def download_image_urls():
+    with open(CONTRARIANMBA_RAW_JSON_FILENAME, "r") as f:
+        data = json.loads(f.read())
+        books = [Book.from_raw(record) for record in data["books"]]
+
+    for book in books:
+        image_url = book.amazon_image_url
+        image_path = f"{PUBLIC_FOLDER}/images/products/{book.amazon_product_id}.jpg"
+        urllib.request.urlretrieve(image_url, image_path)
 
 
 class AirTableRecord:
@@ -114,6 +130,7 @@ class Book(AirTableRecord):
             "bestInCategory": self.best_in_category,
             "summary": self.summary,
             "amazonProductID": self.amazon_product_id,
+            "amazonImageURL": self.amazon_image_url,
             "hasInventory": self.has_inventory,
         }
         return payload
@@ -143,6 +160,11 @@ class Book(AirTableRecord):
     @property
     def has_inventory(self):
         return self.fields.get("Has Inventory?", False)
+
+    @property
+    def amazon_image_url(self):
+        url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={self.amazon_product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
+        return url
 
 
 def process_records():
