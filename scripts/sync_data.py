@@ -65,6 +65,15 @@ def download_contrarianmba_airtable_records():
         f.write("\n")
 
 
+def download_product_images():
+    with open(CONTRARIANMBA_JSON_FILENAME, "r") as f:
+        data = json.loads(f.read())
+        books = [book for book in data["lookups"]["book_id"].values()]
+
+    for book in books:
+        download_product_image(book["amazonProductID"])
+
+
 def download_product_image(product_id, force=False):
     image_url = build_amazon_image_url(product_id)
     image_path = pathlib.Path(
@@ -75,15 +84,6 @@ def download_product_image(product_id, force=False):
     else:
         # optimization: don’t re-download images that already exist in filesystem
         pass
-
-
-def download_product_images():
-    with open(CONTRARIANMBA_JSON_FILENAME, "r") as f:
-        data = json.loads(f.read())
-        books = [book for book in data["lookups"]["book_id"].values()]
-
-    for book in books:
-        download_product_image(book["amazonProductID"])
 
 
 def build_amazon_image_url(product_id):
