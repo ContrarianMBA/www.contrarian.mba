@@ -1,10 +1,10 @@
 # Python Standard Library Imports
 import json
-import os
 import pathlib
-import sys
-import urllib.request
 from collections import defaultdict
+
+# Third Party (PyPI) Imports
+import requests
 
 
 # isort: off
@@ -76,11 +76,16 @@ def download_product_images(force=False):
 
 def download_product_image(product_id, force=False):
     image_url = build_amazon_image_url(product_id)
-    image_path = pathlib.Path(
-        __file__
-    ).parent.parent / "public/images/products/{}.jpg".format(product_id)
-    if not pathlib.Path(image_path).exists() or force:
-        urllib.request.urlretrieve(image_url, image_path)
+    local_image_path = (
+        pathlib.Path(__file__).parent.parent
+        / f"public/images/products/{product_id}.jpg"
+    )
+    if not local_image_path.exists() or force:
+        response = requests.get(image_url)
+        if response.status_code == 200:
+            with open(local_image_path, "wb") as f:
+                f.write(response.content)
+                print(f'Saved image for {product_id} from {image_url}.')
     else:
         # optimization: don’t re-download images that already exist in filesystem
         pass
