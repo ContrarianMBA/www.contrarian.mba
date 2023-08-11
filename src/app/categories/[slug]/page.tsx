@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { CategoryTitle } from '@/components/CategoryTitle';
+import { PageTitle } from '@/components/PageTitle';
 import { CategoryBooks } from '@/components/CategoryBooks';
 import { CATEGORIES } from '@/constants';
 import { resolveCategorySlug } from '@/utils';
@@ -18,7 +18,7 @@ export default function CategoryPage({ params: { slug } }: Props) {
 
     return (
         <>
-            <CategoryTitle category={category} />
+            <PageTitle title={category.name} />
             <CategoryBooks category={category} />
         </>
     );

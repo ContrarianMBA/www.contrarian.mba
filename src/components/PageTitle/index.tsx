@@ -1,17 +1,15 @@
 'use client';
 import { Container } from 'react-bootstrap';
 
-import { Category } from '@/types';
-
 type Props = {
-    category: Category;
+    title: string;
 };
 
-export function CategoryTitle({ category }: Props) {
+export function PageTitle({ title }: Props) {
     return (
         <section className="bg-contrarian-dark-green py-5 mb-5 shadow-lg">
             <Container>
-                <h1 className="text-white">{category.name}</h1>
+                <h1 className="text-white">{title}</h1>
             </Container>
         </section>
     );

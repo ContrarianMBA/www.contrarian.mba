@@ -1,8 +1,11 @@
-import { CATEGORIES, SITE_URL } from '@/constants';
+import { CATEGORIES, SITE_URL, FOOTER_LINK_PATHS } from '@/constants';
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const staticPaths = ['', 'credits', 'jobs'];
+    const staticPaths = [
+        '', // home page
+        ...FOOTER_LINK_PATHS,
+    ];
 
     const dynamicPaths = [
         ...CATEGORIES.map((category) => {
