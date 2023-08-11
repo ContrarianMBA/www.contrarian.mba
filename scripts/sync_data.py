@@ -1,9 +1,9 @@
 # Python Standard Library Imports
-import os
-import urllib.request
 import json
+import os
 import pathlib
 import sys
+import urllib.request
 from collections import defaultdict
 
 
@@ -65,13 +65,13 @@ def download_contrarianmba_airtable_records():
         f.write("\n")
 
 
-def download_product_images():
+def download_product_images(force=False):
     with open(CONTRARIANMBA_JSON_FILENAME, "r") as f:
         data = json.loads(f.read())
         books = [book for book in data["lookups"]["book_id"].values()]
 
     for book in books:
-        download_product_image(book["amazonProductID"])
+        download_product_image(book["amazonProductID"], force=force)
 
 
 def download_product_image(product_id, force=False):
