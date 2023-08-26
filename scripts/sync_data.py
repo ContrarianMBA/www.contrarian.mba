@@ -1,14 +1,19 @@
 # Python Standard Library Imports
 import json
 import pathlib
-import sys
 from collections import defaultdict
+
+# Third Party (PyPI) Imports
+import requests
 
 
 # isort: off
 
 
 FOLDER = pathlib.Path(__file__).parent.parent / "data"
+PUBLIC_FOLDER = pathlib.Path(__file__).parent.parent / "public"
+
+AMAZON_TRACKING_ID = "contrarianmba-20"
 
 
 CONTRARIANMBA_RAW_JSON_FILENAME = FOLDER / "contrarianmba_raw.json"
@@ -33,8 +38,9 @@ def main():
           ii. By Category
     """
     # TODO: add a -f flag to force re-downloading if the file already exists
-    download_contrarianmba_airtable_records()
-    process_records()
+    # download_contrarianmba_airtable_records()
+    # process_records()
+    download_product_images()
 
 
 def download_contrarianmba_airtable_records():
@@ -57,6 +63,37 @@ def download_contrarianmba_airtable_records():
     with open(CONTRARIANMBA_RAW_JSON_FILENAME, "w") as f:
         f.write(json.dumps(data, indent=4))
         f.write("\n")
+
+
+def download_product_images(force=False):
+    with open(CONTRARIANMBA_JSON_FILENAME, "r") as f:
+        data = json.loads(f.read())
+        books = [book for book in data["lookups"]["book_id"].values()]
+
+    for book in books:
+        download_product_image(book["amazonProductID"], force=force)
+
+
+def download_product_image(product_id, force=False):
+    image_url = build_amazon_image_url(product_id)
+    local_image_path = (
+        pathlib.Path(__file__).parent.parent
+        / f"public/images/products/{product_id}.jpg"
+    )
+    if not local_image_path.exists() or force:
+        response = requests.get(image_url)
+        if response.status_code == 200:
+            with open(local_image_path, "wb") as f:
+                f.write(response.content)
+                print(f'Saved image for {product_id} from {image_url}.')
+    else:
+        # optimization: don’t re-download images that already exist in filesystem
+        pass
+
+
+def build_amazon_image_url(product_id):
+    url = f"http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN={product_id}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag={AMAZON_TRACKING_ID}"  # noqa: E501
+    return url
 
 
 class AirTableRecord:
@@ -139,6 +176,11 @@ class Book(AirTableRecord):
     @property
     def amazon_product_id(self):
         return self.fields["Amazon Product ID"]
+
+    @property
+    def amazon_image_url(self):
+        url = build_amazon_image_url(self.amazon_product_id)
+        return url
 
     @property
     def has_inventory(self):

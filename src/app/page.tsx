@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 import { CATEGORIES } from '@/constants';
 import { Hero } from '@/components/Hero';
-import { CategoryTitle } from '@/components/CategoryTitle';
 import { CategoryBooks } from '@/components/CategoryBooks';
 
 export default function Home() {
