@@ -30,7 +30,7 @@ export function Header() {
 
     return (
         <header className={`main-navbar ${isFixed ? 'fixed-top' : ''}`}>
-            <Navbar expand="lg">
+            <Navbar collapseOnSelect expand="lg">
                 <Container className="d-flex flex-column">
                     <PrimaryNav />
                     <MobileNav />
