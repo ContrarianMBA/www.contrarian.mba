@@ -7,8 +7,12 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@/scss/style.scss';
 
-import { DEFAULT_COLOR_MODE, SITE_NAME } from '@/constants';
-import { GoogleAnalytics } from '@/components/GoogleAnalytics';
+import {
+    DEFAULT_COLOR_MODE,
+    GOOGLE_MEASUREMENT_ID,
+    SITE_NAME,
+} from '@/constants';
+import { GoogleAnalytics } from '@hacktoolkit/nextjs-htk/components';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -64,7 +68,7 @@ export default function RootLayout({ children }: Props) {
             className={`${montserrat.variable} ${merriweather.variable}`}
             data-bs-theme={DEFAULT_COLOR_MODE}
         >
-            <GoogleAnalytics />
+            <GoogleAnalytics measurementId={GOOGLE_MEASUREMENT_ID} />
             <body className="d-flex flex-column vh-100">
                 <Header />
                 <main className="flex-grow-1 mb-5">{children}</main>

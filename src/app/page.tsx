@@ -19,7 +19,7 @@ export default function Home() {
                             </Col>
                         </Row>
                     </Container>
-                    <CategoryBooks category={category} />
+                    <CategoryBooks categorySlug={category.slug} />
                 </section>
             ))}
         </>

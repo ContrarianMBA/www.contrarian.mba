@@ -5,11 +5,12 @@ import { CATEGORIES } from '@/constants';
 import { resolveCategorySlug } from '@/utils';
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
-export default function CategoryPage({ params: { slug } }: Props) {
+export default async function CategoryPage({ params }: Props) {
+    const { slug } = await params;
     const category = resolveCategorySlug(slug);
 
     if (typeof category === 'undefined') {
@@ -19,7 +20,7 @@ export default function CategoryPage({ params: { slug } }: Props) {
     return (
         <>
             <PageTitle title={category.name} />
-            <CategoryBooks category={category} />
+            <CategoryBooks categorySlug={slug} />
         </>
     );
 }
