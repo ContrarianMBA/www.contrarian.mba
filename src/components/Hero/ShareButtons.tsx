@@ -41,7 +41,6 @@ export function ShareButtons() {
             </LinkedinShareButton>
             <FacebookShareButton
                 className={className}
-                quote={SHARE_QUOTE}
                 hashtag={`#${FACEBOOK_HANDLE}`}
                 url={SITE_URL}
             >
