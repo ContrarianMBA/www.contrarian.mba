@@ -33,8 +33,3 @@ deploy: build
 	git add docs
 	git commit -m "Deploy `git rev-parse --verify HEAD`"
 	git push origin master
-
-## deploy - build and deploy the app
-deploy: build
-	git add docs
-	git commit -m "Deploy $$(git rev-parse --short HEAD)"
